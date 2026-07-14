@@ -4,7 +4,10 @@
   <div class="bottle-landing__hero page-width">
     <div class="bottle-landing__copy">
       {{#if section.settings.eyebrow}}
-        <p class="bottle-landing__eyebrow">{{section.settings.eyebrow}}</p>
+        <div class="bottle-landing__rating-pill">
+          <span class="bottle-landing__stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <span>{{section.settings.eyebrow}}</span>
+        </div>
       {{/if}}
       <h1 class="bottle-landing__title">{{{section.settings.heading | newline_to_br()}}}</h1>
       <p class="bottle-landing__text">{{section.settings.description}}</p>
@@ -23,19 +26,30 @@
         <li>{{section.settings.perk_2}}</li>
         <li>{{section.settings.perk_3}}</li>
       </ul>
+
+      <div class="bottle-landing__service-row" aria-label="Store service promises">
+        <span>{{section.settings.service_1}}</span>
+        <span>{{section.settings.service_2}}</span>
+      </div>
     </div>
 
     <div class="bottle-landing__media">
+      <div class="bottle-landing__media-wash" aria-hidden="true"></div>
       <div class="bottle-landing__image-frame">
         {{#if section.settings.hero_image}}
           {{#component "image" data=section.settings.hero_image class="bottle-landing__image" /}}
         {{#else/}}
-          {{#placeholder_svg "product-1" class="bottle-landing__placeholder" /}}
+          <img class="bottle-landing__image" src="{{`images/hero-dog-car.png` | asset_url()}}" alt="Dog relaxing in a protected car back seat" loading="eager" />
         {{/if}}
       </div>
       <div class="bottle-landing__badge">
         <strong>{{section.settings.badge_number}}</strong>
         <span>{{section.settings.badge_label}}</span>
+      </div>
+      <div class="bottle-landing__score-card">
+        <strong>{{section.settings.score_number}}</strong>
+        <span class="bottle-landing__stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <small>{{section.settings.score_label}}</small>
       </div>
     </div>
   </div>
@@ -55,27 +69,37 @@
     </div>
   {{/if}}
 
-  <div class="bottle-landing__section page-width">
-    <div class="bottle-landing__section-heading">
-      <h2>{{section.settings.features_heading}}</h2>
-      <p>{{section.settings.features_description}}</p>
-    </div>
-    <div class="bottle-landing__feature-grid">
-      <article>
-        <span>01</span>
-        <h3>{{section.settings.feature_1_title}}</h3>
-        <p>{{section.settings.feature_1_text}}</p>
-      </article>
-      <article>
-        <span>02</span>
-        <h3>{{section.settings.feature_2_title}}</h3>
-        <p>{{section.settings.feature_2_text}}</p>
-      </article>
-      <article>
-        <span>03</span>
-        <h3>{{section.settings.feature_3_title}}</h3>
-        <p>{{section.settings.feature_3_text}}</p>
-      </article>
+  <div class="bottle-landing__feature-story">
+    <div class="page-width bottle-landing__feature-story-inner">
+      <div class="bottle-landing__feature-media">
+        {{#if section.settings.feature_image}}
+          {{#component "image" data=section.settings.feature_image class="bottle-landing__image" /}}
+        {{#else/}}
+          <img class="bottle-landing__image" src="{{`images/product-convertible-espresso.png` | asset_url()}}" alt="Convertible dog car seat cover product detail" loading="lazy" />
+        {{/if}}
+      </div>
+      <div>
+        <p class="bottle-landing__eyebrow">{{section.settings.features_eyebrow}}</p>
+        <h2>{{section.settings.features_heading}}</h2>
+        <p>{{section.settings.features_description}}</p>
+        <div class="bottle-landing__mini-feature-grid">
+          <article>
+            <span aria-hidden="true">01</span>
+            <h3>{{section.settings.feature_1_title}}</h3>
+            <p>{{section.settings.feature_1_text}}</p>
+          </article>
+          <article>
+            <span aria-hidden="true">02</span>
+            <h3>{{section.settings.feature_2_title}}</h3>
+            <p>{{section.settings.feature_2_text}}</p>
+          </article>
+          <article>
+            <span aria-hidden="true">03</span>
+            <h3>{{section.settings.feature_3_title}}</h3>
+            <p>{{section.settings.feature_3_text}}</p>
+          </article>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -157,7 +181,7 @@
 
 {{#schema}}
 {
-  "name": "Bottle landing page",
+  "name": "Pet landing page",
   "icon": "campaignPromotion",
   "settings": [
     {
@@ -169,20 +193,20 @@
     {
       "type": "text",
       "id": "eyebrow",
-      "label": "Hero eyebrow",
-      "default": "Built for everyday carry"
+      "label": "Hero rating text",
+      "default": "Loved by 40,000+ pet parents"
     },
     {
       "type": "textarea",
       "id": "heading",
       "label": "Hero heading",
-      "default": "Hydration that\nkeeps pace."
+      "default": "Muddy paws\nstop here."
     },
     {
       "type": "textarea",
       "id": "description",
       "label": "Hero description",
-      "default": "A durable bottle landing page adapted from your original homepage template, ready for SHOPLINE collections, promos, and product storytelling."
+      "default": "Waterproof back-seat covers, hammocks, and cargo liners that shield your car from fur, mud, and scratches while your best friend rides in cozy comfort."
     },
     {
       "type": "image",
@@ -193,7 +217,7 @@
       "type": "text",
       "id": "primary_button_text",
       "label": "Primary button text",
-      "default": "Shop bottles"
+      "default": "Shop seat covers"
     },
     {
       "type": "url",
@@ -205,7 +229,7 @@
       "type": "text",
       "id": "secondary_button_text",
       "label": "Secondary button text",
-      "default": "Explore details"
+      "default": "How it works"
     },
     {
       "type": "url",
@@ -217,31 +241,55 @@
       "type": "text",
       "id": "perk_1",
       "label": "Perk 1",
-      "default": "Leak-resistant lid"
+      "default": "100% waterproof"
     },
     {
       "type": "text",
       "id": "perk_2",
       "label": "Perk 2",
-      "default": "Double-wall insulation"
+      "default": "Scratch-proof fabric"
     },
     {
       "type": "text",
       "id": "perk_3",
       "label": "Perk 3",
-      "default": "Easy to clean"
+      "default": "Fits most cars & SUVs"
     },
     {
       "type": "text",
       "id": "badge_number",
       "label": "Badge number",
-      "default": "24h"
+      "default": "100%"
     },
     {
       "type": "text",
       "id": "badge_label",
       "label": "Badge label",
-      "default": "Cold retention"
+      "default": "Waterproof"
+    },
+    {
+      "type": "text",
+      "id": "score_number",
+      "label": "Score number",
+      "default": "4.9"
+    },
+    {
+      "type": "text",
+      "id": "score_label",
+      "label": "Score label",
+      "default": "8,000+ reviews"
+    },
+    {
+      "type": "text",
+      "id": "service_1",
+      "label": "Service promise 1",
+      "default": "Free U.S. shipping"
+    },
+    {
+      "type": "text",
+      "id": "service_2",
+      "label": "Service promise 2",
+      "default": "30-day returns"
     },
     {
       "type": "switch",
@@ -253,139 +301,150 @@
       "type": "text",
       "id": "trust_1",
       "label": "Trust item 1",
-      "default": "BPA-free materials"
+      "default": "100% Waterproof"
     },
     {
       "type": "text",
       "id": "trust_2",
       "label": "Trust item 2",
-      "default": "Fast local shipping"
+      "default": "Scratch-Proof Fabric"
     },
     {
       "type": "text",
       "id": "trust_3",
       "label": "Trust item 3",
-      "default": "Reusable daily design"
+      "default": "Free U.S. Shipping over $75"
     },
     {
       "type": "text",
       "id": "trust_4",
       "label": "Trust item 4",
-      "default": "Made for commute and travel"
+      "default": "Loved by 40,000+ Pet Parents"
+    },
+    {
+      "type": "text",
+      "id": "features_eyebrow",
+      "label": "Features eyebrow",
+      "default": "Why RoverSeat"
+    },
+    {
+      "type": "image",
+      "id": "feature_image",
+      "label": "Feature image"
     },
     {
       "type": "text",
       "id": "features_heading",
       "label": "Features heading",
-      "default": "Small details, better routines"
+      "default": "Engineered to protect. Designed for tail wags."
     },
     {
       "type": "textarea",
       "id": "features_description",
       "label": "Features description",
-      "default": "Use this section to explain the strongest reasons customers should choose your bottle collection."
+      "default": "We obsess over the details so you can clip in and go - no more vacuuming fur out of seams or scrubbing muddy paw prints."
     },
     {
       "type": "text",
       "id": "feature_1_title",
       "label": "Feature 1 title",
-      "default": "Keeps drinks ready"
+      "default": "Waterproof, every layer"
     },
     {
       "type": "textarea",
       "id": "feature_1_text",
       "label": "Feature 1 text",
-      "default": "Insulated walls help maintain temperature through commutes, workouts, and long desk days."
+      "default": "A sealed Oxford top and backed lining keep water, drool, and accidents off your upholstery."
     },
     {
       "type": "text",
       "id": "feature_2_title",
       "label": "Feature 2 title",
-      "default": "Built to move"
+      "default": "Scratch & claw resistant"
     },
     {
       "type": "textarea",
       "id": "feature_2_text",
       "label": "Feature 2 text",
-      "default": "A compact silhouette fits cup holders, backpacks, and daily carry without fuss."
+      "default": "Reinforced fabric shrugs off restless paws so leather and cloth seats stay showroom-fresh."
     },
     {
       "type": "text",
       "id": "feature_3_title",
       "label": "Feature 3 title",
-      "default": "Simple care"
+      "default": "Anti-slip, stays put"
     },
     {
       "type": "textarea",
       "id": "feature_3_text",
       "label": "Feature 3 text",
-      "default": "Wide openings and removable parts make washing easier between refills."
+      "default": "Non-slip backing plus straps and seat anchors keep the cover locked in place on bumpy roads."
     },
     {
       "type": "text",
       "id": "steps_eyebrow",
       "label": "Steps eyebrow",
-      "default": "How it fits your day"
+      "default": "Ready in under a minute"
     },
     {
       "type": "text",
       "id": "steps_heading",
       "label": "Steps heading",
-      "default": "From refill to repeat"
+      "default": "Install in 3 easy steps"
     },
     {
       "type": "text",
       "id": "step_1_title",
       "label": "Step 1 title",
-      "default": "Fill it"
+      "default": "Drape it over the seat"
     },
     {
       "type": "textarea",
       "id": "step_1_text",
       "label": "Step 1 text",
-      "default": "Add water, coffee, tea, or your daily drink before heading out."
+      "default": "Lay the cover across your back seat and tuck the side flaps against the door panels."
     },
     {
       "type": "text",
       "id": "step_2_title",
       "label": "Step 2 title",
-      "default": "Carry it"
+      "default": "Clip the straps"
     },
     {
       "type": "textarea",
       "id": "step_2_text",
       "label": "Step 2 text",
-      "default": "Take it through work, errands, travel, or training without babying it."
+      "default": "Loop the adjustable straps around the headrests and secure the seat anchors underneath."
     },
     {
       "type": "text",
       "id": "step_3_title",
       "label": "Step 3 title",
-      "default": "Reuse it"
+      "default": "Load your co-pilot"
     },
     {
       "type": "textarea",
       "id": "step_3_text",
       "label": "Step 3 text",
-      "default": "Rinse, reset, and keep one less disposable bottle out of the day."
+      "default": "Open the seat-belt slots, buckle up your pup, and hit the road worry-free."
     },
     {
       "type": "text",
       "id": "reviews_heading",
       "label": "Reviews heading",
-      "default": "Customers keep it close"
+      "default": "40,000+ happy pet parents"
     },
     {
       "type": "textarea",
       "id": "reviews_description",
       "label": "Reviews description",
-      "default": "Swap these with real customer quotes once your SHOPLINE reviews are ready."
+      "default": "Real reviews from road-trippers, weekend hikers, and daily dog-park drivers."
     },
     {
       "type": "textarea",
       "id": "review_1_text",
       "label": "Review 1 text",
-      "default": "It feels sturdy without being bulky, and the lid is easy to open one-handed."
+      "default": "My back seat used to be a fur tornado. Now I unclip the cover, shake it out, and my car looks brand new."
     },
     {
       "type": "text",
@@ -397,7 +456,7 @@
       "type": "textarea",
       "id": "review_2_text",
       "label": "Review 2 text",
-      "default": "My drink stayed cold through a full afternoon outside. The size is just right."
+      "default": "Took it on a 12-hour road trip. Zero slipping, zero scratches, and both dogs were comfy the whole way."
     },
     {
       "type": "text",
@@ -409,7 +468,7 @@
       "type": "textarea",
       "id": "review_3_text",
       "label": "Review 3 text",
-      "default": "Easy to clean, no weird taste, and it looks good on my desk."
+      "default": "Installed it in about 30 seconds and it fits my SUV perfectly. The waterproof claim is legit."
     },
     {
       "type": "text",
@@ -469,19 +528,19 @@
       "type": "text",
       "id": "cta_heading",
       "label": "CTA heading",
-      "default": "Find your everyday bottle"
+      "default": "Give your pup the comfiest seat in the car"
     },
     {
       "type": "textarea",
       "id": "cta_description",
       "label": "CTA description",
-      "default": "Point this button to your featured collection once your SHOPLINE products are selected."
+      "default": "Join pet parents who protect their cars the easy way with waterproof covers made for real rides."
     },
     {
       "type": "text",
       "id": "cta_button_text",
       "label": "CTA button text",
-      "default": "Shop collection"
+      "default": "Shop seat covers"
     },
     {
       "type": "url",
@@ -493,7 +552,7 @@
   "presets": [
     {
       "category": "Custom",
-      "name": "Bottle landing page"
+      "name": "Pet landing page"
     }
   ]
 }
