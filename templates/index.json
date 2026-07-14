@@ -612,7 +612,12 @@
                      "roverseat-home":  {
                                             "type":  "roverseat-home",
                                             "settings":  {
-
+                                                             "classic_hammock_link":  "",
+                                                             "bench_cover_link":  "",
+                                                             "cargo_liner_link":  "",
+                                                             "convertible_cover_link":  "",
+                                                             "bucket_cover_link":  "",
+                                                             "bundle_link":  ""
                                                          }
                                         }
                  },

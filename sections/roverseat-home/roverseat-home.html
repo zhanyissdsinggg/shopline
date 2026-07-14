@@ -1,5 +1,18 @@
 {{#component "stylesheet" src="./roverseat-home.css" | asset_url() /}}
 
+<style>
+  @font-face { font-family: "Inter"; font-style: normal; font-weight: 400; font-display: swap; src: url("{{`fonts/inter-400.ttf` | asset_url()}}") format("truetype"); }
+  @font-face { font-family: "Inter"; font-style: normal; font-weight: 500; font-display: swap; src: url("{{`fonts/inter-500.ttf` | asset_url()}}") format("truetype"); }
+  @font-face { font-family: "Inter"; font-style: normal; font-weight: 600; font-display: swap; src: url("{{`fonts/inter-600.ttf` | asset_url()}}") format("truetype"); }
+  @font-face { font-family: "Inter"; font-style: normal; font-weight: 700; font-display: swap; src: url("{{`fonts/inter-700.ttf` | asset_url()}}") format("truetype"); }
+  @font-face { font-family: "Inter"; font-style: normal; font-weight: 800; font-display: swap; src: url("{{`fonts/inter-800.ttf` | asset_url()}}") format("truetype"); }
+  @font-face { font-family: "Inter"; font-style: normal; font-weight: 900; font-display: swap; src: url("{{`fonts/inter-900.ttf` | asset_url()}}") format("truetype"); }
+  @font-face { font-family: "Nunito"; font-style: normal; font-weight: 600; font-display: swap; src: url("{{`fonts/nunito-600.ttf` | asset_url()}}") format("truetype"); }
+  @font-face { font-family: "Nunito"; font-style: normal; font-weight: 700; font-display: swap; src: url("{{`fonts/nunito-700.ttf` | asset_url()}}") format("truetype"); }
+  @font-face { font-family: "Nunito"; font-style: normal; font-weight: 800; font-display: swap; src: url("{{`fonts/nunito-800.ttf` | asset_url()}}") format("truetype"); }
+  @font-face { font-family: "Nunito"; font-style: normal; font-weight: 900; font-display: swap; src: url("{{`fonts/nunito-900.ttf` | asset_url()}}") format("truetype"); }
+</style>
+
 <section class="rs-home" data-section-id="{{section.id}}">
   <div class="rs-hero page-width">
     <div class="rs-hero__copy">
@@ -26,7 +39,7 @@
 
     <div class="rs-hero__media">
       <div class="rs-hero__image">
-        <img src="{{`images/hero-dog-car.png` | asset_url()}}" alt="Golden retriever relaxing on a charcoal hammock seat cover in an SUV back seat" loading="eager" />
+        <img src="{{`images/hero-dog-car.jpg` | asset_url()}}" alt="Golden retriever relaxing on a charcoal hammock seat cover in an SUV back seat" loading="eager" />
       </div>
       <div class="rs-score-card">
         <strong>4.9</strong>
@@ -52,35 +65,35 @@
     </div>
     <div class="rs-product-grid">
       <article class="rs-product-card">
-        <a class="rs-product-card__image" href="#"><img src="{{`images/product-hammock-charcoal.png` | asset_url()}}" alt="Classic Hammock Cover in Charcoal Gray" loading="lazy" /><span>Best Seller</span><span>Save 22%</span></a>
-        <div class="rs-product-card__body"><div class="rs-product-card__rating"><span class="rs-stars">&#9733;</span><strong>4.9</strong><span>(2,841)</span></div><h3>Classic Hammock Cover</h3><p>Charcoal Gray</p><p>Full back-seat protection with a scratch-proof hammock wall</p><div class="rs-product-card__footer"><div><strong>$69.99</strong><s>$89.99</s></div><a href="#" class="rs-add" data-label="Shop now" aria-label="Shop Classic Hammock Cover">Shop now</a></div></div>
+        <a class="rs-product-card__image" href="{{section.settings.classic_hammock_link | default("#shop", allow_empty_str=false)}}"><img src="{{`images/product-hammock-charcoal.jpg` | asset_url()}}" alt="Classic Hammock Cover in Charcoal Gray" loading="lazy" /><span>Best Seller</span><span>Save 22%</span></a>
+        <div class="rs-product-card__body"><div class="rs-product-card__rating"><span class="rs-stars">&#9733;</span><strong>4.9</strong><span>(2,841)</span></div><h3>Classic Hammock Cover</h3><p>Charcoal Gray</p><p>Full back-seat protection with a scratch-proof hammock wall</p><div class="rs-product-card__footer"><div><strong>$69.99</strong><s>$89.99</s></div><a href="{{section.settings.classic_hammock_link | default("#shop", allow_empty_str=false)}}" class="rs-add" data-label="Shop now" aria-label="Shop Classic Hammock Cover">Shop now</a></div></div>
       </article>
       <article class="rs-product-card">
-        <a class="rs-product-card__image" href="#"><img src="{{`images/product-bench-sandstone.png` | asset_url()}}" alt="Waterproof Bench Cover in Sandstone" loading="lazy" /><span>Save 21%</span></a>
-        <div class="rs-product-card__body"><div class="rs-product-card__rating"><span class="rs-stars">&#9733;</span><strong>4.8</strong><span>(1,637)</span></div><h3>Waterproof Bench Cover</h3><p>Sandstone</p><p>Low-profile everyday coverage that installs in seconds</p><div class="rs-product-card__footer"><div><strong>$54.99</strong><s>$69.99</s></div><a href="#" class="rs-add" data-label="Shop now" aria-label="Shop Waterproof Bench Cover">Shop now</a></div></div>
+        <a class="rs-product-card__image" href="{{section.settings.bench_cover_link | default("#shop", allow_empty_str=false)}}"><img src="{{`images/product-bench-sandstone.jpg` | asset_url()}}" alt="Waterproof Bench Cover in Sandstone" loading="lazy" /><span>Save 21%</span></a>
+        <div class="rs-product-card__body"><div class="rs-product-card__rating"><span class="rs-stars">&#9733;</span><strong>4.8</strong><span>(1,637)</span></div><h3>Waterproof Bench Cover</h3><p>Sandstone</p><p>Low-profile everyday coverage that installs in seconds</p><div class="rs-product-card__footer"><div><strong>$54.99</strong><s>$69.99</s></div><a href="{{section.settings.bench_cover_link | default("#shop", allow_empty_str=false)}}" class="rs-add" data-label="Shop now" aria-label="Shop Waterproof Bench Cover">Shop now</a></div></div>
       </article>
       <article class="rs-product-card">
-        <a class="rs-product-card__image" href="#"><img src="{{`images/product-cargo-green.png` | asset_url()}}" alt="SUV Cargo Liner in Forest Green" loading="lazy" /><span>For SUVs</span></a>
-        <div class="rs-product-card__body"><div class="rs-product-card__rating"><span class="rs-stars">&#9733;</span><strong>4.9</strong><span>(964)</span></div><h3>SUV Cargo Liner</h3><p>Forest Green</p><p>Trunk-to-bumper coverage for big dogs and big adventures</p><div class="rs-product-card__footer"><div><strong>$79.99</strong></div><a href="#" class="rs-add" data-label="Shop now" aria-label="Shop SUV Cargo Liner">Shop now</a></div></div>
+        <a class="rs-product-card__image" href="{{section.settings.cargo_liner_link | default("#shop", allow_empty_str=false)}}"><img src="{{`images/product-cargo-green.jpg` | asset_url()}}" alt="SUV Cargo Liner in Forest Green" loading="lazy" /><span>For SUVs</span></a>
+        <div class="rs-product-card__body"><div class="rs-product-card__rating"><span class="rs-stars">&#9733;</span><strong>4.9</strong><span>(964)</span></div><h3>SUV Cargo Liner</h3><p>Forest Green</p><p>Trunk-to-bumper coverage for big dogs and big adventures</p><div class="rs-product-card__footer"><div><strong>$79.99</strong></div><a href="{{section.settings.cargo_liner_link | default("#shop", allow_empty_str=false)}}" class="rs-add" data-label="Shop now" aria-label="Shop SUV Cargo Liner">Shop now</a></div></div>
       </article>
       <article class="rs-product-card">
-        <a class="rs-product-card__image" href="#"><img src="{{`images/product-convertible-espresso.png` | asset_url()}}" alt="Convertible 2-in-1 Cover in Espresso" loading="lazy" /><span>Most Versatile</span><span>Save 18%</span></a>
-        <div class="rs-product-card__body"><div class="rs-product-card__rating"><span class="rs-stars">&#9733;</span><strong>4.9</strong><span>(1,203)</span></div><h3>Convertible 2-in-1 Cover</h3><p>Espresso</p><p>Switch between hammock and bench in one zip</p><div class="rs-product-card__footer"><div><strong>$89.99</strong><s>$109.99</s></div><a href="#" class="rs-add" data-label="Shop now" aria-label="Shop Convertible 2-in-1 Cover">Shop now</a></div></div>
+        <a class="rs-product-card__image" href="{{section.settings.convertible_cover_link | default("#shop", allow_empty_str=false)}}"><img src="{{`images/product-convertible-espresso.jpg` | asset_url()}}" alt="Convertible 2-in-1 Cover in Espresso" loading="lazy" /><span>Most Versatile</span><span>Save 18%</span></a>
+        <div class="rs-product-card__body"><div class="rs-product-card__rating"><span class="rs-stars">&#9733;</span><strong>4.9</strong><span>(1,203)</span></div><h3>Convertible 2-in-1 Cover</h3><p>Espresso</p><p>Switch between hammock and bench in one zip</p><div class="rs-product-card__footer"><div><strong>$89.99</strong><s>$109.99</s></div><a href="{{section.settings.convertible_cover_link | default("#shop", allow_empty_str=false)}}" class="rs-add" data-label="Shop now" aria-label="Shop Convertible 2-in-1 Cover">Shop now</a></div></div>
       </article>
       <article class="rs-product-card">
-        <a class="rs-product-card__image" href="#"><img src="{{`images/product-bucket-navy.png` | asset_url()}}" alt="Single Bucket Cover in Navy" loading="lazy" /></a>
-        <div class="rs-product-card__body"><div class="rs-product-card__rating"><span class="rs-stars">&#9733;</span><strong>4.7</strong><span>(812)</span></div><h3>Single Bucket Cover</h3><p>Navy</p><p>Compact coverage for one back seat</p><div class="rs-product-card__footer"><div><strong>$39.99</strong></div><a href="#" class="rs-add" data-label="Shop now" aria-label="Shop Single Bucket Cover">Shop now</a></div></div>
+        <a class="rs-product-card__image" href="{{section.settings.bucket_cover_link | default("#shop", allow_empty_str=false)}}"><img src="{{`images/product-bucket-navy.jpg` | asset_url()}}" alt="Single Bucket Cover in Navy" loading="lazy" /></a>
+        <div class="rs-product-card__body"><div class="rs-product-card__rating"><span class="rs-stars">&#9733;</span><strong>4.7</strong><span>(812)</span></div><h3>Single Bucket Cover</h3><p>Navy</p><p>Compact coverage for one back seat</p><div class="rs-product-card__footer"><div><strong>$39.99</strong></div><a href="{{section.settings.bucket_cover_link | default("#shop", allow_empty_str=false)}}" class="rs-add" data-label="Shop now" aria-label="Shop Single Bucket Cover">Shop now</a></div></div>
       </article>
       <article class="rs-product-card">
-        <a class="rs-product-card__image" href="#"><img src="{{`images/product-bundle.png` | asset_url()}}" alt="Ultimate Road-Trip Bundle in Gray Bundle" loading="lazy" /><span>Best Value</span><span>Save 29%</span></a>
-        <div class="rs-product-card__body"><div class="rs-product-card__rating"><span class="rs-stars">&#9733;</span><strong>5.0</strong><span>(526)</span></div><h3>Ultimate Road-Trip Bundle</h3><p>Gray Bundle</p><p>Hammock cover, window shades & safety leash together</p><div class="rs-product-card__footer"><div><strong>$99.99</strong><s>$139.99</s></div><a href="#" class="rs-add" data-label="Shop now" aria-label="Shop Ultimate Road-Trip Bundle">Shop now</a></div></div>
+        <a class="rs-product-card__image" href="{{section.settings.bundle_link | default("#shop", allow_empty_str=false)}}"><img src="{{`images/product-bundle.jpg` | asset_url()}}" alt="Ultimate Road-Trip Bundle in Gray Bundle" loading="lazy" /><span>Best Value</span><span>Save 29%</span></a>
+        <div class="rs-product-card__body"><div class="rs-product-card__rating"><span class="rs-stars">&#9733;</span><strong>5.0</strong><span>(526)</span></div><h3>Ultimate Road-Trip Bundle</h3><p>Gray Bundle</p><p>Hammock cover, window shades & safety leash together</p><div class="rs-product-card__footer"><div><strong>$99.99</strong><s>$139.99</s></div><a href="{{section.settings.bundle_link | default("#shop", allow_empty_str=false)}}" class="rs-add" data-label="Shop now" aria-label="Shop Ultimate Road-Trip Bundle">Shop now</a></div></div>
       </article>
     </div>
   </div>
 
   <div id="features" class="rs-features">
     <div class="page-width rs-features__inner">
-      <div class="rs-feature-image"><img src="{{`images/product-convertible-espresso.png` | asset_url()}}" alt="Convertible dog seat cover with quilted padded top" loading="lazy" /></div>
+      <div class="rs-feature-image"><img src="{{`images/product-convertible-espresso.jpg` | asset_url()}}" alt="Convertible dog seat cover with quilted padded top" loading="lazy" /></div>
       <div class="rs-feature-copy"><p>Why RoverSeat</p><h2>Engineered to protect. Designed for tail wags.</h2><span>We obsess over the details so you can just clip in and go - no more vacuuming fur out of the seams or scrubbing muddy paw prints.</span><div class="rs-feature-list"><article><strong>Waterproof, every layer</strong><span>A sealed 600D Oxford top and TPU-backed lining keep water, drool, and accidents off your upholstery.</span></article><article><strong>Scratch & claw resistant</strong><span>Reinforced fabric shrugs off restless paws so your leather and cloth seats stay showroom-fresh.</span></article><article><strong>Anti-slip, stays put</strong><span>Non-slip backing plus headrest straps and seat anchors keep the cover locked in place on bumpy roads.</span></article><article><strong>Universal fit</strong><span>Adjustable straps fit the vast majority of sedans, SUVs, and trucks on U.S. roads.</span></article><article><strong>Machine washable</strong><span>Unclip, toss it in the wash, and hang to dry. Fresh and ready for the next adventure.</span></article><article><strong>Breathable comfort</strong><span>Soft quilted padding cushions the ride while a mesh window lets you check on your pup.</span></article></div></div>
     </div>
   </div>
@@ -100,7 +113,44 @@
 {
   "name": "RoverSeat homepage",
   "icon": "campaignPromotion",
-  "settings": [],
+  "settings": [
+    {
+      "type": "url",
+      "id": "classic_hammock_link",
+      "label": "Classic Hammock Cover link",
+      "default": ""
+    },
+    {
+      "type": "url",
+      "id": "bench_cover_link",
+      "label": "Waterproof Bench Cover link",
+      "default": ""
+    },
+    {
+      "type": "url",
+      "id": "cargo_liner_link",
+      "label": "SUV Cargo Liner link",
+      "default": ""
+    },
+    {
+      "type": "url",
+      "id": "convertible_cover_link",
+      "label": "Convertible 2-in-1 Cover link",
+      "default": ""
+    },
+    {
+      "type": "url",
+      "id": "bucket_cover_link",
+      "label": "Single Bucket Cover link",
+      "default": ""
+    },
+    {
+      "type": "url",
+      "id": "bundle_link",
+      "label": "Ultimate Road-Trip Bundle link",
+      "default": ""
+    }
+  ],
   "presets": [
     {
       "category": "Custom",
@@ -109,4 +159,5 @@
   ]
 }
 {{/schema}}
+
 
