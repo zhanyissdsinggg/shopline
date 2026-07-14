@@ -1,0 +1,500 @@
+{{#component "stylesheet" src="./bottle-landing.css" | asset_url() /}}
+
+<section class="bottle-landing color-{{section.settings.color_scheme.id}}" data-section-id="{{section.id}}">
+  <div class="bottle-landing__hero page-width">
+    <div class="bottle-landing__copy">
+      {{#if section.settings.eyebrow}}
+        <p class="bottle-landing__eyebrow">{{section.settings.eyebrow}}</p>
+      {{/if}}
+      <h1 class="bottle-landing__title">{{{section.settings.heading | newline_to_br()}}}</h1>
+      <p class="bottle-landing__text">{{section.settings.description}}</p>
+
+      <div class="bottle-landing__actions">
+        {{#if section.settings.primary_button_text}}
+          {{#component "button" type="link" link_url=section.settings.primary_button_link text=section.settings.primary_button_text /}}
+        {{/if}}
+        {{#if section.settings.secondary_button_text}}
+          {{#component "button" type="link" link_url=section.settings.secondary_button_link text=section.settings.secondary_button_text style_secondary=true /}}
+        {{/if}}
+      </div>
+
+      <ul class="bottle-landing__perks" aria-label="Product highlights">
+        <li>{{section.settings.perk_1}}</li>
+        <li>{{section.settings.perk_2}}</li>
+        <li>{{section.settings.perk_3}}</li>
+      </ul>
+    </div>
+
+    <div class="bottle-landing__media">
+      <div class="bottle-landing__image-frame">
+        {{#if section.settings.hero_image}}
+          {{#component "image" data=section.settings.hero_image class="bottle-landing__image" /}}
+        {{#else/}}
+          {{#placeholder_svg "product-1" class="bottle-landing__placeholder" /}}
+        {{/if}}
+      </div>
+      <div class="bottle-landing__badge">
+        <strong>{{section.settings.badge_number}}</strong>
+        <span>{{section.settings.badge_label}}</span>
+      </div>
+    </div>
+  </div>
+
+  {{#if section.settings.show_trust_bar}}
+    <div class="bottle-landing__trust" aria-label="Store benefits">
+      <div class="bottle-landing__trust-track">
+        <span>{{section.settings.trust_1}}</span>
+        <span>{{section.settings.trust_2}}</span>
+        <span>{{section.settings.trust_3}}</span>
+        <span>{{section.settings.trust_4}}</span>
+        <span>{{section.settings.trust_1}}</span>
+        <span>{{section.settings.trust_2}}</span>
+        <span>{{section.settings.trust_3}}</span>
+        <span>{{section.settings.trust_4}}</span>
+      </div>
+    </div>
+  {{/if}}
+
+  <div class="bottle-landing__section page-width">
+    <div class="bottle-landing__section-heading">
+      <h2>{{section.settings.features_heading}}</h2>
+      <p>{{section.settings.features_description}}</p>
+    </div>
+    <div class="bottle-landing__feature-grid">
+      <article>
+        <span>01</span>
+        <h3>{{section.settings.feature_1_title}}</h3>
+        <p>{{section.settings.feature_1_text}}</p>
+      </article>
+      <article>
+        <span>02</span>
+        <h3>{{section.settings.feature_2_title}}</h3>
+        <p>{{section.settings.feature_2_text}}</p>
+      </article>
+      <article>
+        <span>03</span>
+        <h3>{{section.settings.feature_3_title}}</h3>
+        <p>{{section.settings.feature_3_text}}</p>
+      </article>
+    </div>
+  </div>
+
+  <div class="bottle-landing__steps">
+    <div class="page-width bottle-landing__steps-inner">
+      <div>
+        <p class="bottle-landing__eyebrow">{{section.settings.steps_eyebrow}}</p>
+        <h2>{{section.settings.steps_heading}}</h2>
+      </div>
+      <ol>
+        <li>
+          <strong>{{section.settings.step_1_title}}</strong>
+          <span>{{section.settings.step_1_text}}</span>
+        </li>
+        <li>
+          <strong>{{section.settings.step_2_title}}</strong>
+          <span>{{section.settings.step_2_text}}</span>
+        </li>
+        <li>
+          <strong>{{section.settings.step_3_title}}</strong>
+          <span>{{section.settings.step_3_text}}</span>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="bottle-landing__reviews page-width">
+    <div class="bottle-landing__section-heading bottle-landing__section-heading--left">
+      <h2>{{section.settings.reviews_heading}}</h2>
+      <p>{{section.settings.reviews_description}}</p>
+    </div>
+    <div class="bottle-landing__review-grid">
+      <figure>
+        <blockquote>{{section.settings.review_1_text}}</blockquote>
+        <figcaption>{{section.settings.review_1_author}}</figcaption>
+      </figure>
+      <figure>
+        <blockquote>{{section.settings.review_2_text}}</blockquote>
+        <figcaption>{{section.settings.review_2_author}}</figcaption>
+      </figure>
+      <figure>
+        <blockquote>{{section.settings.review_3_text}}</blockquote>
+        <figcaption>{{section.settings.review_3_author}}</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="bottle-landing__faq page-width">
+    <div class="bottle-landing__section-heading">
+      <h2>{{section.settings.faq_heading}}</h2>
+      <p>{{section.settings.faq_description}}</p>
+    </div>
+    <div class="bottle-landing__faq-list">
+      <details open>
+        <summary>{{section.settings.faq_1_question}}</summary>
+        <p>{{section.settings.faq_1_answer}}</p>
+      </details>
+      <details>
+        <summary>{{section.settings.faq_2_question}}</summary>
+        <p>{{section.settings.faq_2_answer}}</p>
+      </details>
+      <details>
+        <summary>{{section.settings.faq_3_question}}</summary>
+        <p>{{section.settings.faq_3_answer}}</p>
+      </details>
+    </div>
+  </div>
+
+  <div class="bottle-landing__cta page-width">
+    <div>
+      <h2>{{section.settings.cta_heading}}</h2>
+      <p>{{section.settings.cta_description}}</p>
+    </div>
+    {{#if section.settings.cta_button_text}}
+      {{#component "button" type="link" link_url=section.settings.cta_button_link text=section.settings.cta_button_text /}}
+    {{/if}}
+  </div>
+</section>
+
+{{#schema}}
+{
+  "name": "Bottle landing page",
+  "icon": "campaignPromotion",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Hero eyebrow",
+      "default": "Built for everyday carry"
+    },
+    {
+      "type": "textarea",
+      "id": "heading",
+      "label": "Hero heading",
+      "default": "Hydration that\nkeeps pace."
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Hero description",
+      "default": "A durable bottle landing page adapted from your original homepage template, ready for SHOPLINE collections, promos, and product storytelling."
+    },
+    {
+      "type": "image",
+      "id": "hero_image",
+      "label": "Hero image"
+    },
+    {
+      "type": "text",
+      "id": "primary_button_text",
+      "label": "Primary button text",
+      "default": "Shop bottles"
+    },
+    {
+      "type": "url",
+      "id": "primary_button_link",
+      "label": "Primary button link",
+      "default": ""
+    },
+    {
+      "type": "text",
+      "id": "secondary_button_text",
+      "label": "Secondary button text",
+      "default": "Explore details"
+    },
+    {
+      "type": "url",
+      "id": "secondary_button_link",
+      "label": "Secondary button link",
+      "default": ""
+    },
+    {
+      "type": "text",
+      "id": "perk_1",
+      "label": "Perk 1",
+      "default": "Leak-resistant lid"
+    },
+    {
+      "type": "text",
+      "id": "perk_2",
+      "label": "Perk 2",
+      "default": "Double-wall insulation"
+    },
+    {
+      "type": "text",
+      "id": "perk_3",
+      "label": "Perk 3",
+      "default": "Easy to clean"
+    },
+    {
+      "type": "text",
+      "id": "badge_number",
+      "label": "Badge number",
+      "default": "24h"
+    },
+    {
+      "type": "text",
+      "id": "badge_label",
+      "label": "Badge label",
+      "default": "Cold retention"
+    },
+    {
+      "type": "switch",
+      "id": "show_trust_bar",
+      "label": "Show trust bar",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "trust_1",
+      "label": "Trust item 1",
+      "default": "BPA-free materials"
+    },
+    {
+      "type": "text",
+      "id": "trust_2",
+      "label": "Trust item 2",
+      "default": "Fast local shipping"
+    },
+    {
+      "type": "text",
+      "id": "trust_3",
+      "label": "Trust item 3",
+      "default": "Reusable daily design"
+    },
+    {
+      "type": "text",
+      "id": "trust_4",
+      "label": "Trust item 4",
+      "default": "Made for commute and travel"
+    },
+    {
+      "type": "text",
+      "id": "features_heading",
+      "label": "Features heading",
+      "default": "Small details, better routines"
+    },
+    {
+      "type": "textarea",
+      "id": "features_description",
+      "label": "Features description",
+      "default": "Use this section to explain the strongest reasons customers should choose your bottle collection."
+    },
+    {
+      "type": "text",
+      "id": "feature_1_title",
+      "label": "Feature 1 title",
+      "default": "Keeps drinks ready"
+    },
+    {
+      "type": "textarea",
+      "id": "feature_1_text",
+      "label": "Feature 1 text",
+      "default": "Insulated walls help maintain temperature through commutes, workouts, and long desk days."
+    },
+    {
+      "type": "text",
+      "id": "feature_2_title",
+      "label": "Feature 2 title",
+      "default": "Built to move"
+    },
+    {
+      "type": "textarea",
+      "id": "feature_2_text",
+      "label": "Feature 2 text",
+      "default": "A compact silhouette fits cup holders, backpacks, and daily carry without fuss."
+    },
+    {
+      "type": "text",
+      "id": "feature_3_title",
+      "label": "Feature 3 title",
+      "default": "Simple care"
+    },
+    {
+      "type": "textarea",
+      "id": "feature_3_text",
+      "label": "Feature 3 text",
+      "default": "Wide openings and removable parts make washing easier between refills."
+    },
+    {
+      "type": "text",
+      "id": "steps_eyebrow",
+      "label": "Steps eyebrow",
+      "default": "How it fits your day"
+    },
+    {
+      "type": "text",
+      "id": "steps_heading",
+      "label": "Steps heading",
+      "default": "From refill to repeat"
+    },
+    {
+      "type": "text",
+      "id": "step_1_title",
+      "label": "Step 1 title",
+      "default": "Fill it"
+    },
+    {
+      "type": "textarea",
+      "id": "step_1_text",
+      "label": "Step 1 text",
+      "default": "Add water, coffee, tea, or your daily drink before heading out."
+    },
+    {
+      "type": "text",
+      "id": "step_2_title",
+      "label": "Step 2 title",
+      "default": "Carry it"
+    },
+    {
+      "type": "textarea",
+      "id": "step_2_text",
+      "label": "Step 2 text",
+      "default": "Take it through work, errands, travel, or training without babying it."
+    },
+    {
+      "type": "text",
+      "id": "step_3_title",
+      "label": "Step 3 title",
+      "default": "Reuse it"
+    },
+    {
+      "type": "textarea",
+      "id": "step_3_text",
+      "label": "Step 3 text",
+      "default": "Rinse, reset, and keep one less disposable bottle out of the day."
+    },
+    {
+      "type": "text",
+      "id": "reviews_heading",
+      "label": "Reviews heading",
+      "default": "Customers keep it close"
+    },
+    {
+      "type": "textarea",
+      "id": "reviews_description",
+      "label": "Reviews description",
+      "default": "Swap these with real customer quotes once your SHOPLINE reviews are ready."
+    },
+    {
+      "type": "textarea",
+      "id": "review_1_text",
+      "label": "Review 1 text",
+      "default": "It feels sturdy without being bulky, and the lid is easy to open one-handed."
+    },
+    {
+      "type": "text",
+      "id": "review_1_author",
+      "label": "Review 1 author",
+      "default": "Mia L."
+    },
+    {
+      "type": "textarea",
+      "id": "review_2_text",
+      "label": "Review 2 text",
+      "default": "My drink stayed cold through a full afternoon outside. The size is just right."
+    },
+    {
+      "type": "text",
+      "id": "review_2_author",
+      "label": "Review 2 author",
+      "default": "Jordan P."
+    },
+    {
+      "type": "textarea",
+      "id": "review_3_text",
+      "label": "Review 3 text",
+      "default": "Easy to clean, no weird taste, and it looks good on my desk."
+    },
+    {
+      "type": "text",
+      "id": "review_3_author",
+      "label": "Review 3 author",
+      "default": "Nora K."
+    },
+    {
+      "type": "text",
+      "id": "faq_heading",
+      "label": "FAQ heading",
+      "default": "Quick answers"
+    },
+    {
+      "type": "textarea",
+      "id": "faq_description",
+      "label": "FAQ description",
+      "default": "Edit these questions in the theme editor to match your exact product details."
+    },
+    {
+      "type": "text",
+      "id": "faq_1_question",
+      "label": "FAQ 1 question",
+      "default": "Is it leak-resistant?"
+    },
+    {
+      "type": "textarea",
+      "id": "faq_1_answer",
+      "label": "FAQ 1 answer",
+      "default": "Use this answer to describe your lid, seal, and recommended carry position."
+    },
+    {
+      "type": "text",
+      "id": "faq_2_question",
+      "label": "FAQ 2 question",
+      "default": "How should I clean it?"
+    },
+    {
+      "type": "textarea",
+      "id": "faq_2_answer",
+      "label": "FAQ 2 answer",
+      "default": "List dishwasher guidance, hand-wash recommendations, and care details here."
+    },
+    {
+      "type": "text",
+      "id": "faq_3_question",
+      "label": "FAQ 3 question",
+      "default": "Where does it ship?"
+    },
+    {
+      "type": "textarea",
+      "id": "faq_3_answer",
+      "label": "FAQ 3 answer",
+      "default": "Replace this with your actual shipping areas, delivery timeline, and return policy."
+    },
+    {
+      "type": "text",
+      "id": "cta_heading",
+      "label": "CTA heading",
+      "default": "Find your everyday bottle"
+    },
+    {
+      "type": "textarea",
+      "id": "cta_description",
+      "label": "CTA description",
+      "default": "Point this button to your featured collection once your SHOPLINE products are selected."
+    },
+    {
+      "type": "text",
+      "id": "cta_button_text",
+      "label": "CTA button text",
+      "default": "Shop collection"
+    },
+    {
+      "type": "url",
+      "id": "cta_button_link",
+      "label": "CTA button link",
+      "default": ""
+    }
+  ],
+  "presets": [
+    {
+      "category": "Custom",
+      "name": "Bottle landing page"
+    }
+  ]
+}
+{{/schema}}

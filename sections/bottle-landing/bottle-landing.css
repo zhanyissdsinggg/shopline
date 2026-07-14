@@ -1,0 +1,422 @@
+.bottle-landing {
+  --bl-ink: rgb(var(--color-text));
+  --bl-bg: rgb(var(--color-background));
+  --bl-muted: rgba(var(--color-text), 0.68);
+  --bl-line: rgba(var(--color-text), 0.14);
+  --bl-soft: rgba(var(--color-text), 0.055);
+  background: var(--bl-bg);
+  color: var(--bl-ink);
+  overflow: hidden;
+}
+
+.bottle-landing * {
+  box-sizing: border-box;
+}
+
+.bottle-landing__hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.86fr);
+  align-items: center;
+  gap: 56px;
+  padding-block: 56px 64px;
+}
+
+.bottle-landing__copy {
+  max-width: 660px;
+}
+
+.bottle-landing__eyebrow {
+  margin: 0 0 18px;
+  width: fit-content;
+  border: 1px solid var(--bl-line);
+  border-radius: 999px;
+  padding: 8px 14px;
+  background: var(--bl-soft);
+  color: var(--bl-muted);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.bottle-landing__title {
+  margin: 0;
+  max-width: 11ch;
+  color: var(--bl-ink);
+  font-size: clamp(44px, 7vw, 82px);
+  font-weight: 800;
+  line-height: 0.98;
+  letter-spacing: 0;
+  text-wrap: balance;
+}
+
+.bottle-landing__text {
+  margin: 24px 0 0;
+  max-width: 56ch;
+  color: var(--bl-muted);
+  font-size: 18px;
+  line-height: 1.7;
+  text-wrap: pretty;
+}
+
+.bottle-landing__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.bottle-landing__perks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  margin: 28px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.bottle-landing__perks li {
+  position: relative;
+  padding-left: 24px;
+  color: var(--bl-ink);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.bottle-landing__perks li::before {
+  position: absolute;
+  left: 0;
+  top: 0.15em;
+  display: grid;
+  width: 16px;
+  height: 16px;
+  place-items: center;
+  border-radius: 50%;
+  background: rgb(var(--color-button-background));
+  color: rgb(var(--color-button-text));
+  content: "✓";
+  font-size: 11px;
+  line-height: 1;
+}
+
+.bottle-landing__media {
+  position: relative;
+}
+
+.bottle-landing__image-frame {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: 18px;
+  background: var(--bl-soft);
+}
+
+.bottle-landing__image,
+.bottle-landing__placeholder {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bottle-landing__placeholder {
+  background: var(--bl-soft);
+}
+
+.bottle-landing__badge {
+  position: absolute;
+  right: -14px;
+  bottom: 28px;
+  display: flex;
+  min-width: 132px;
+  flex-direction: column;
+  gap: 2px;
+  border-radius: 14px;
+  padding: 16px 18px;
+  background: rgb(var(--color-button-background));
+  color: rgb(var(--color-button-text));
+}
+
+.bottle-landing__badge strong {
+  font-size: 30px;
+  line-height: 1;
+}
+
+.bottle-landing__badge span {
+  font-size: 12px;
+  font-weight: 700;
+  opacity: 0.9;
+}
+
+.bottle-landing__trust {
+  border-block: 1px solid var(--bl-line);
+  overflow: hidden;
+  background: var(--bl-soft);
+}
+
+.bottle-landing__trust-track {
+  display: flex;
+  width: max-content;
+  min-width: 100%;
+  gap: 34px;
+  padding-block: 15px;
+  animation: bottle-landing-marquee 34s linear infinite;
+}
+
+.bottle-landing__trust-track span {
+  white-space: nowrap;
+  color: var(--bl-muted);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.bottle-landing__section,
+.bottle-landing__reviews,
+.bottle-landing__faq {
+  padding-block: 72px;
+}
+
+.bottle-landing__section-heading {
+  max-width: 660px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.bottle-landing__section-heading--left {
+  margin-inline: 0;
+  text-align: left;
+}
+
+.bottle-landing__section-heading h2,
+.bottle-landing__steps h2,
+.bottle-landing__cta h2 {
+  margin: 0;
+  color: var(--bl-ink);
+  font-size: clamp(30px, 4vw, 48px);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: 0;
+  text-wrap: balance;
+}
+
+.bottle-landing__section-heading p,
+.bottle-landing__cta p {
+  margin: 14px 0 0;
+  color: var(--bl-muted);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.bottle-landing__feature-grid,
+.bottle-landing__review-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 34px;
+}
+
+.bottle-landing__feature-grid article,
+.bottle-landing__review-grid figure {
+  margin: 0;
+  border: 1px solid var(--bl-line);
+  border-radius: 14px;
+  padding: 24px;
+  background: var(--bl-bg);
+}
+
+.bottle-landing__feature-grid span {
+  display: inline-flex;
+  margin-bottom: 34px;
+  color: rgb(var(--color-button-background));
+  font-weight: 800;
+}
+
+.bottle-landing__feature-grid h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.bottle-landing__feature-grid p,
+.bottle-landing__review-grid blockquote,
+.bottle-landing__faq-list p,
+.bottle-landing__steps span {
+  margin: 10px 0 0;
+  color: var(--bl-muted);
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.bottle-landing__steps {
+  background: var(--bl-soft);
+}
+
+.bottle-landing__steps-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: 44px;
+  padding-block: 70px;
+}
+
+.bottle-landing__steps ol {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: bottle-step;
+}
+
+.bottle-landing__steps li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8px 18px;
+  border-bottom: 1px solid var(--bl-line);
+  padding: 0 0 18px;
+  counter-increment: bottle-step;
+}
+
+.bottle-landing__steps li::before {
+  grid-row: span 2;
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border-radius: 50%;
+  background: rgb(var(--color-button-background));
+  color: rgb(var(--color-button-text));
+  content: counter(bottle-step, decimal-leading-zero);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.bottle-landing__steps strong {
+  align-self: end;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.bottle-landing__review-grid blockquote {
+  margin-top: 0;
+}
+
+.bottle-landing__review-grid figcaption {
+  margin-top: 18px;
+  color: var(--bl-ink);
+  font-weight: 800;
+}
+
+.bottle-landing__faq {
+  padding-top: 0;
+}
+
+.bottle-landing__faq-list {
+  max-width: 820px;
+  margin: 32px auto 0;
+  border-top: 1px solid var(--bl-line);
+}
+
+.bottle-landing__faq-list details {
+  border-bottom: 1px solid var(--bl-line);
+  padding: 18px 0;
+}
+
+.bottle-landing__faq-list summary {
+  cursor: pointer;
+  color: var(--bl-ink);
+  font-size: 18px;
+  font-weight: 800;
+  list-style: none;
+}
+
+.bottle-landing__faq-list summary::-webkit-details-marker {
+  display: none;
+}
+
+.bottle-landing__faq-list summary::after {
+  float: right;
+  color: var(--bl-muted);
+  content: "+";
+}
+
+.bottle-landing__faq-list details[open] summary::after {
+  content: "-";
+}
+
+.bottle-landing__cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 72px;
+  border-radius: 18px;
+  padding: 34px;
+  background: var(--bl-soft);
+}
+
+.bottle-landing__cta > div {
+  max-width: 680px;
+}
+
+@keyframes bottle-landing-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bottle-landing__trust-track {
+    animation: none;
+  }
+}
+
+@media (max-width: 959px) {
+  .bottle-landing__hero,
+  .bottle-landing__steps-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .bottle-landing__hero {
+    gap: 34px;
+    padding-block: 36px 48px;
+  }
+
+  .bottle-landing__title {
+    max-width: 12ch;
+    font-size: 44px;
+  }
+
+  .bottle-landing__text {
+    font-size: 16px;
+  }
+
+  .bottle-landing__badge {
+    right: 14px;
+    bottom: 14px;
+  }
+
+  .bottle-landing__feature-grid,
+  .bottle-landing__review-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bottle-landing__section,
+  .bottle-landing__reviews,
+  .bottle-landing__faq {
+    padding-block: 48px;
+  }
+
+  .bottle-landing__section-heading--left {
+    text-align: center;
+  }
+
+  .bottle-landing__cta {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 48px;
+    padding: 24px;
+  }
+}
