@@ -1,0 +1,112 @@
+﻿{{#component "stylesheet" src="./roverseat-home.css" | asset_url() /}}
+
+<section class="rs-home" data-section-id="{{section.id}}">
+  <div class="rs-hero page-width">
+    <div class="rs-hero__copy">
+      <div class="rs-rating-pill">
+        <span class="rs-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <span>Loved by 40,000+ dog parents</span>
+      </div>
+      <h1>Muddy paws<br /><span>stop here.</span></h1>
+      <p>Waterproof back-seat covers and hammocks that shield your car from fur, mud, and scratches while your best friend rides in cozy comfort.</p>
+      <div class="rs-actions">
+        <a class="rs-button rs-button--primary" href="#shop">Shop back-seat covers</a>
+        <a class="rs-button rs-button--outline" href="#features">How it works</a>
+      </div>
+      <ul class="rs-perks" aria-label="Product highlights">
+        <li>100% waterproof</li>
+        <li>Scratch-proof</li>
+        <li>Fits most cars & SUVs</li>
+      </ul>
+      <div class="rs-service-row">
+        <span>Free U.S. shipping</span>
+        <span>30-day returns</span>
+      </div>
+    </div>
+
+    <div class="rs-hero__media">
+      <div class="rs-hero__image">
+        <img src="{{`images/hero-dog-car.png` | asset_url()}}" alt="Golden retriever relaxing on a charcoal hammock seat cover in an SUV back seat" loading="eager" />
+      </div>
+      <div class="rs-score-card">
+        <strong>4.9</strong>
+        <span class="rs-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <small>8,000+ reviews</small>
+      </div>
+      <div class="rs-waterproof-badge"><strong>100%</strong><span>Waterproof</span></div>
+    </div>
+  </div>
+
+  <div class="rs-trust" aria-label="Store benefits">
+    <div class="rs-trust__track">
+      <span>100% Waterproof</span><span>Scratch-Proof Fabric</span><span>Free U.S. Shipping over $75</span><span>30-Day Happy-Tails Returns</span><span>Loved by 40,000+ Dog Parents</span>
+      <span>100% Waterproof</span><span>Scratch-Proof Fabric</span><span>Free U.S. Shipping over $75</span><span>30-Day Happy-Tails Returns</span><span>Loved by 40,000+ Dog Parents</span>
+    </div>
+  </div>
+
+  <div id="shop" class="rs-section page-width">
+    <div class="rs-section__heading">
+      <p>Shop the collection</p>
+      <h2>Covers built for every ride</h2>
+      <span>From quick trips to the dog park to cross-country road trips, there is a RoverSeat cover that fits your car and your co-pilot.</span>
+    </div>
+    <div class="rs-product-grid">
+      <article class="rs-product-card">
+        <a class="rs-product-card__image" href="#"><img src="{{`images/product-hammock-charcoal.png` | asset_url()}}" alt="Classic Hammock Cover in Charcoal Gray" loading="lazy" /><span>Best Seller</span><span>Save 22%</span></a>
+        <div class="rs-product-card__body"><div class="rs-product-card__rating"><span class="rs-stars">&#9733;</span><strong>4.9</strong><span>(2,841)</span></div><h3>Classic Hammock Cover</h3><p>Charcoal Gray</p><p>Full back-seat protection with a scratch-proof hammock wall</p><div class="rs-product-card__footer"><div><strong>$69.99</strong><s>$89.99</s></div><a href="#" class="rs-add">Add</a></div></div>
+      </article>
+      <article class="rs-product-card">
+        <a class="rs-product-card__image" href="#"><img src="{{`images/product-bench-sandstone.png` | asset_url()}}" alt="Waterproof Bench Cover in Sandstone" loading="lazy" /><span>Save 21%</span></a>
+        <div class="rs-product-card__body"><div class="rs-product-card__rating"><span class="rs-stars">&#9733;</span><strong>4.8</strong><span>(1,637)</span></div><h3>Waterproof Bench Cover</h3><p>Sandstone</p><p>Low-profile everyday coverage that installs in seconds</p><div class="rs-product-card__footer"><div><strong>$54.99</strong><s>$69.99</s></div><a href="#" class="rs-add">Add</a></div></div>
+      </article>
+      <article class="rs-product-card">
+        <a class="rs-product-card__image" href="#"><img src="{{`images/product-cargo-green.png` | asset_url()}}" alt="SUV Cargo Liner in Forest Green" loading="lazy" /><span>For SUVs</span></a>
+        <div class="rs-product-card__body"><div class="rs-product-card__rating"><span class="rs-stars">&#9733;</span><strong>4.9</strong><span>(964)</span></div><h3>SUV Cargo Liner</h3><p>Forest Green</p><p>Trunk-to-bumper coverage for big dogs and big adventures</p><div class="rs-product-card__footer"><div><strong>$79.99</strong></div><a href="#" class="rs-add">Add</a></div></div>
+      </article>
+      <article class="rs-product-card">
+        <a class="rs-product-card__image" href="#"><img src="{{`images/product-convertible-espresso.png` | asset_url()}}" alt="Convertible 2-in-1 Cover in Espresso" loading="lazy" /><span>Most Versatile</span><span>Save 18%</span></a>
+        <div class="rs-product-card__body"><div class="rs-product-card__rating"><span class="rs-stars">&#9733;</span><strong>4.9</strong><span>(1,203)</span></div><h3>Convertible 2-in-1 Cover</h3><p>Espresso</p><p>Switch between hammock and bench in one zip</p><div class="rs-product-card__footer"><div><strong>$89.99</strong><s>$109.99</s></div><a href="#" class="rs-add">Add</a></div></div>
+      </article>
+      <article class="rs-product-card">
+        <a class="rs-product-card__image" href="#"><img src="{{`images/product-bucket-navy.png` | asset_url()}}" alt="Single Bucket Cover in Navy" loading="lazy" /></a>
+        <div class="rs-product-card__body"><div class="rs-product-card__rating"><span class="rs-stars">&#9733;</span><strong>4.7</strong><span>(812)</span></div><h3>Single Bucket Cover</h3><p>Navy</p><p>Compact coverage for one back seat</p><div class="rs-product-card__footer"><div><strong>$39.99</strong></div><a href="#" class="rs-add">Add</a></div></div>
+      </article>
+      <article class="rs-product-card">
+        <a class="rs-product-card__image" href="#"><img src="{{`images/product-bundle.png` | asset_url()}}" alt="Ultimate Road-Trip Bundle in Gray Bundle" loading="lazy" /><span>Best Value</span><span>Save 29%</span></a>
+        <div class="rs-product-card__body"><div class="rs-product-card__rating"><span class="rs-stars">&#9733;</span><strong>5.0</strong><span>(526)</span></div><h3>Ultimate Road-Trip Bundle</h3><p>Gray Bundle</p><p>Hammock cover, window shades & safety leash together</p><div class="rs-product-card__footer"><div><strong>$99.99</strong><s>$139.99</s></div><a href="#" class="rs-add">Add</a></div></div>
+      </article>
+    </div>
+  </div>
+
+  <div id="features" class="rs-features">
+    <div class="page-width rs-features__inner">
+      <div class="rs-feature-image"><img src="{{`images/product-convertible-espresso.png` | asset_url()}}" alt="Convertible dog seat cover with quilted padded top" loading="lazy" /></div>
+      <div class="rs-feature-copy"><p>Why RoverSeat</p><h2>Engineered to protect. Designed for tail wags.</h2><span>We obsess over the details so you can just clip in and go - no more vacuuming fur out of the seams or scrubbing muddy paw prints.</span><div class="rs-feature-list"><article><strong>Waterproof, every layer</strong><span>A sealed 600D Oxford top and TPU-backed lining keep water, drool, and accidents off your upholstery.</span></article><article><strong>Scratch & claw resistant</strong><span>Reinforced fabric shrugs off restless paws so your leather and cloth seats stay showroom-fresh.</span></article><article><strong>Anti-slip, stays put</strong><span>Non-slip backing plus headrest straps and seat anchors keep the cover locked in place on bumpy roads.</span></article><article><strong>Universal fit</strong><span>Adjustable straps fit the vast majority of sedans, SUVs, and trucks on U.S. roads.</span></article><article><strong>Machine washable</strong><span>Unclip, toss it in the wash, and hang to dry. Fresh and ready for the next adventure.</span></article><article><strong>Breathable comfort</strong><span>Soft quilted padding cushions the ride while a mesh window lets you check on your pup.</span></article></div></div>
+    </div>
+  </div>
+
+  <div class="rs-stats page-width"><div><strong>40,000+</strong><span>Happy dog parents</span></div><div><strong>4.9/5</strong><span>Average rating</span></div><div><strong>98%</strong><span>Would buy again</span></div><div><strong>1M+</strong><span>Miles ridden safely</span></div></div>
+
+  <div class="rs-steps page-width"><div class="rs-section__heading"><p>Ready in under a minute</p><h2>Install in 3 easy steps</h2></div><div class="rs-step-grid"><article><strong>01</strong><h3>Drape it over the seat</h3><span>Lay the cover across your back seat and tuck the sides against the door panels.</span></article><article><strong>02</strong><h3>Clip the straps</h3><span>Loop the adjustable straps around the headrests and buckle the seat anchors underneath.</span></article><article><strong>03</strong><h3>Load your co-pilot</h3><span>Open the seat-belt slots, buckle up your pup, and hit the road worry-free.</span></article></div></div>
+
+  <div class="rs-reviews"><div class="page-width"><div class="rs-section__heading"><div class="rs-rating-pill"><span class="rs-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span>4.9 / 5</span></div><h2>40,000+ happy dog parents</h2><span>Real reviews from real road-trippers across the U.S.</span></div><div class="rs-review-grid"><figure><blockquote>My back seat used to be a fur tornado. Now I unclip the cover, shake it out, and my car looks brand new. The hammock wall is a game changer for muddy hikes.</blockquote><figcaption>Sarah M.<br /><span>Austin, TX - Golden Retriever</span></figcaption></figure><figure><blockquote>Took it on a 12-hour road trip through the Rockies. Zero slipping, zero scratches, and both dogs were comfy the whole way. Worth every penny.</blockquote><figcaption>James R.<br /><span>Denver, CO - Two Labs</span></figcaption></figure><figure><blockquote>Installed it in about 30 seconds and it fits my CR-V perfectly. Waterproof claim is legit.</blockquote><figcaption>Priya K.<br /><span>Seattle, WA - Rescue Pup</span></figcaption></figure><figure><blockquote>Big dog, big mess - not anymore. The fabric is seriously heavy-duty and the straps never budge.</blockquote><figcaption>Marcus T.<br /><span>Nashville, TN - Bernese Mountain Dog</span></figcaption></figure></div></div></div>
+
+  <div class="rs-faq page-width"><div class="rs-section__heading"><h2>Questions? We've got answers</h2><span>Everything you need to know before your next ride.</span></div><div class="rs-faq-list"><details open><summary>Will it fit my car?</summary><p>Our covers use adjustable straps and anchors that fit the vast majority of sedans, SUVs, and trucks sold in the U.S.</p></details><details><summary>Is it actually waterproof?</summary><p>Yes. Every cover uses a sealed Oxford top layer with a waterproof lining, so mud, rain, drool, and accidents stay on top and wipe right off.</p></details><details><summary>Can my dog still be buckled in?</summary><p>Absolutely. Each cover includes seat-belt openings so you can thread a harness or safety leash through and keep your pup secured.</p></details><details><summary>How do I clean it?</summary><p>For everyday messes, just wipe it down with a damp cloth. For a deeper clean, unclip the cover, machine wash on cold, and hang to dry.</p></details></div></div>
+
+  <div class="rs-cta page-width"><div><svg class="rs-cta__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="4" r="2"/><circle cx="18" cy="8" r="2"/><circle cx="20" cy="16" r="2"/><path d="M9 10a5 5 0 0 1 5 5v3.5a2.5 2.5 0 0 1-5 0V17a1 1 0 0 0-1-1H6.5a2.5 2.5 0 0 1 0-5H9Z"/></svg><h2>Give your pup the comfiest seat in the house</h2><p>Join 40,000+ dog parents who protect their cars the easy way. Free U.S. shipping over $75 and a 30-day money-back guarantee.</p><a class="rs-button rs-button--secondary" href="#shop">Shop back-seat covers</a></div></div>
+</section>
+
+{{#schema}}
+{
+  "name": "RoverSeat homepage",
+  "icon": "campaignPromotion",
+  "settings": [],
+  "presets": [
+    {
+      "category": "Custom",
+      "name": "RoverSeat homepage"
+    }
+  ]
+}
+{{/schema}}
+

@@ -1,583 +1,622 @@
-{
-  "sections": {
-    "bottle-landing": {
-      "type": "bottle-landing",
-      "settings": {
-        "color_scheme": "scheme-1",
-        "eyebrow": "Loved by 40,000+ pet parents",
-        "heading": "Muddy paws\nstop here.",
-        "description": "Waterproof back-seat covers, hammocks, and cargo liners that shield your car from fur, mud, and scratches while your best friend rides in cozy comfort.",
-        "primary_button_text": "Shop seat covers",
-        "primary_button_link": "",
-        "secondary_button_text": "How it works",
-        "secondary_button_link": "",
-        "perk_1": "100% waterproof",
-        "perk_2": "Scratch-proof fabric",
-        "perk_3": "Fits most cars & SUVs",
-        "badge_number": "100%",
-        "badge_label": "Waterproof",
-        "score_number": "4.9",
-        "score_label": "8,000+ reviews",
-        "service_1": "Free U.S. shipping",
-        "service_2": "30-day returns",
-        "show_trust_bar": true,
-        "trust_1": "100% Waterproof",
-        "trust_2": "Scratch-Proof Fabric",
-        "trust_3": "Free U.S. Shipping over $75",
-        "trust_4": "Loved by 40,000+ Pet Parents",
-        "features_eyebrow": "Why RoverSeat",
-        "features_heading": "Engineered to protect. Designed for tail wags.",
-        "features_description": "We obsess over the details so you can clip in and go - no more vacuuming fur out of seams or scrubbing muddy paw prints.",
-        "feature_1_title": "Waterproof, every layer",
-        "feature_1_text": "A sealed Oxford top and backed lining keep water, drool, and accidents off your upholstery.",
-        "feature_2_title": "Scratch & claw resistant",
-        "feature_2_text": "Reinforced fabric shrugs off restless paws so leather and cloth seats stay showroom-fresh.",
-        "feature_3_title": "Anti-slip, stays put",
-        "feature_3_text": "Non-slip backing plus straps and seat anchors keep the cover locked in place on bumpy roads.",
-        "steps_eyebrow": "Ready in under a minute",
-        "steps_heading": "Install in 3 easy steps",
-        "step_1_title": "Drape it over the seat",
-        "step_1_text": "Lay the cover across your back seat and tuck the side flaps against the door panels.",
-        "step_2_title": "Clip the straps",
-        "step_2_text": "Loop the adjustable straps around the headrests and secure the seat anchors underneath.",
-        "step_3_title": "Load your co-pilot",
-        "step_3_text": "Open the seat-belt slots, buckle up your pup, and hit the road worry-free.",
-        "reviews_heading": "40,000+ happy pet parents",
-        "reviews_description": "Real reviews from road-trippers, weekend hikers, and daily dog-park drivers.",
-        "review_1_text": "My back seat used to be a fur tornado. Now I unclip the cover, shake it out, and my car looks brand new.",
-        "review_1_author": "Mia L.",
-        "review_2_text": "Took it on a 12-hour road trip. Zero slipping, zero scratches, and both dogs were comfy the whole way.",
-        "review_2_author": "Jordan P.",
-        "review_3_text": "Installed it in about 30 seconds and it fits my SUV perfectly. The waterproof claim is legit.",
-        "review_3_author": "Nora K.",
-        "faq_heading": "Quick answers",
-        "faq_description": "Edit these questions in the theme editor to match your exact product details.",
-        "faq_1_question": "Is it leak-resistant?",
-        "faq_1_answer": "Use this answer to describe your lid, seal, and recommended carry position.",
-        "faq_2_question": "How should I clean it?",
-        "faq_2_answer": "List dishwasher guidance, hand-wash recommendations, and care details here.",
-        "faq_3_question": "Where does it ship?",
-        "faq_3_answer": "Replace this with your actual shipping areas, delivery timeline, and return policy.",
-        "cta_heading": "Give your pup the comfiest seat in the car",
-        "cta_description": "Join pet parents who protect their cars the easy way with waterproof covers made for real rides.",
-        "cta_button_text": "Shop seat covers",
-        "cta_button_link": ""
-      }
-    },
-    "text-columns-with-image": {
-      "type": "text-columns-with-image",
-      "settings": {},
-      "blocks": {
-        "text-columns-with-image__heading": {
-          "type": "$heading"
-        },
-        "text-columns-with-image__card-group": {
-          "type": "$card-group",
-          "settings": {},
-          "blocks": {
-            "text-columns-with-image__card": {
-              "type": "$card",
-              "settings": {},
-              "blocks": {
-                "text-columns-with-image__card1__image": {
-                  "type": "$image"
-                },
-                "text-columns-with-image__card1__title": {
-                  "type": "$title"
-                },
-                "text-columns-with-image__card1__text": {
-                  "type": "$text"
-                }
-              },
-              "block_order": [
-                "text-columns-with-image__card1__image",
-                "text-columns-with-image__card1__title",
-                "text-columns-with-image__card1__text"
+﻿{
+    "sections":  {
+                     "text-columns-with-image":  {
+                                                     "type":  "text-columns-with-image",
+                                                     "settings":  {
+
+                                                                  },
+                                                     "blocks":  {
+                                                                    "text-columns-with-image__heading":  {
+                                                                                                             "type":  "$heading"
+                                                                                                         },
+                                                                    "text-columns-with-image__card-group":  {
+                                                                                                                "type":  "$card-group",
+                                                                                                                "settings":  {
+
+                                                                                                                             },
+                                                                                                                "blocks":  {
+                                                                                                                               "text-columns-with-image__card":  {
+                                                                                                                                                                     "type":  "$card",
+                                                                                                                                                                     "settings":  {
+
+                                                                                                                                                                                  },
+                                                                                                                                                                     "blocks":  {
+                                                                                                                                                                                    "text-columns-with-image__card1__image":  {
+                                                                                                                                                                                                                                  "type":  "$image"
+                                                                                                                                                                                                                              },
+                                                                                                                                                                                    "text-columns-with-image__card1__title":  {
+                                                                                                                                                                                                                                  "type":  "$title"
+                                                                                                                                                                                                                              },
+                                                                                                                                                                                    "text-columns-with-image__card1__text":  {
+                                                                                                                                                                                                                                 "type":  "$text"
+                                                                                                                                                                                                                             }
+                                                                                                                                                                                },
+                                                                                                                                                                     "block_order":  [
+                                                                                                                                                                                         "text-columns-with-image__card1__image",
+                                                                                                                                                                                         "text-columns-with-image__card1__title",
+                                                                                                                                                                                         "text-columns-with-image__card1__text"
+                                                                                                                                                                                     ]
+                                                                                                                                                                 },
+                                                                                                                               "text-columns-with-image__card2":  {
+                                                                                                                                                                      "type":  "$card",
+                                                                                                                                                                      "settings":  {
+
+                                                                                                                                                                                   },
+                                                                                                                                                                      "blocks":  {
+                                                                                                                                                                                     "text-columns-with-image__card2__image":  {
+                                                                                                                                                                                                                                   "type":  "$image"
+                                                                                                                                                                                                                               },
+                                                                                                                                                                                     "text-columns-with-image__card2__title":  {
+                                                                                                                                                                                                                                   "type":  "$title"
+                                                                                                                                                                                                                               },
+                                                                                                                                                                                     "text-columns-with-image__card2__text":  {
+                                                                                                                                                                                                                                  "type":  "$text"
+                                                                                                                                                                                                                              }
+                                                                                                                                                                                 },
+                                                                                                                                                                      "block_order":  [
+                                                                                                                                                                                          "text-columns-with-image__card2__image",
+                                                                                                                                                                                          "text-columns-with-image__card2__title",
+                                                                                                                                                                                          "text-columns-with-image__card2__text"
+                                                                                                                                                                                      ]
+                                                                                                                                                                  },
+                                                                                                                               "text-columns-with-image__card3":  {
+                                                                                                                                                                      "type":  "$card",
+                                                                                                                                                                      "settings":  {
+
+                                                                                                                                                                                   },
+                                                                                                                                                                      "blocks":  {
+                                                                                                                                                                                     "text-columns-with-image__card3__image":  {
+                                                                                                                                                                                                                                   "type":  "$image"
+                                                                                                                                                                                                                               },
+                                                                                                                                                                                     "text-columns-with-image__card3__title":  {
+                                                                                                                                                                                                                                   "type":  "$title"
+                                                                                                                                                                                                                               },
+                                                                                                                                                                                     "text-columns-with-image__card3__text":  {
+                                                                                                                                                                                                                                  "type":  "$text"
+                                                                                                                                                                                                                              }
+                                                                                                                                                                                 },
+                                                                                                                                                                      "block_order":  [
+                                                                                                                                                                                          "text-columns-with-image__card3__image",
+                                                                                                                                                                                          "text-columns-with-image__card3__title",
+                                                                                                                                                                                          "text-columns-with-image__card3__text"
+                                                                                                                                                                                      ]
+                                                                                                                                                                  }
+                                                                                                                           },
+                                                                                                                "block_order":  [
+                                                                                                                                    "text-columns-with-image__card",
+                                                                                                                                    "text-columns-with-image__card2",
+                                                                                                                                    "text-columns-with-image__card3"
+                                                                                                                                ]
+                                                                                                            }
+                                                                },
+                                                     "block_order":  [
+                                                                         "text-columns-with-image__heading",
+                                                                         "text-columns-with-image__card-group"
+                                                                     ]
+                                                 },
+                     "image-with-text":  {
+                                             "type":  "image-with-text",
+                                             "settings":  {
+
+                                                          },
+                                             "blocks":  {
+                                                            "image-with-text__image":  {
+                                                                                           "type":  "$image"
+                                                                                       },
+                                                            "image-with-text__group":  {
+                                                                                           "type":  "$group",
+                                                                                           "settings":  {
+
+                                                                                                        },
+                                                                                           "blocks":  {
+                                                                                                          "image-with-text__group__heading":  {
+                                                                                                                                                  "type":  "$heading"
+                                                                                                                                              },
+                                                                                                          "image-with-text__group__subheading":  {
+                                                                                                                                                     "type":  "$subheading"
+                                                                                                                                                 },
+                                                                                                          "image-with-text__group__rich-text":  {
+                                                                                                                                                    "type":  "$rich-text"
+                                                                                                                                                },
+                                                                                                          "image-with-text__group__button":  {
+                                                                                                                                                 "type":  "$button"
+                                                                                                                                             }
+                                                                                                      },
+                                                                                           "block_order":  [
+                                                                                                               "image-with-text__group__subheading",
+                                                                                                               "image-with-text__group__heading",
+                                                                                                               "image-with-text__group__rich-text",
+                                                                                                               "image-with-text__group__button"
+                                                                                                           ]
+                                                                                       }
+                                                        },
+                                             "block_order":  [
+                                                                 "image-with-text__image",
+                                                                 "image-with-text__group"
+                                                             ]
+                                         },
+                     "slideshow":  {
+                                       "type":  "slideshow",
+                                       "settings":  {
+
+                                                    },
+                                       "blocks":  {
+                                                      "slideshow__image":  {
+                                                                               "type":  "$image",
+                                                                               "settings":  {
+
+                                                                                            },
+                                                                               "blocks":  {
+                                                                                              "slideshow__image__group":  {
+                                                                                                                              "type":  "$group",
+                                                                                                                              "settings":  {
+
+                                                                                                                                           },
+                                                                                                                              "blocks":  {
+                                                                                                                                             "slideshow__image__group__title":  {
+                                                                                                                                                                                    "type":  "$title",
+                                                                                                                                                                                    "settings":  {
+
+                                                                                                                                                                                                 }
+                                                                                                                                                                                },
+                                                                                                                                             "slideshow__image__group__subtitle":  {
+                                                                                                                                                                                       "type":  "$subtitle",
+                                                                                                                                                                                       "settings":  {
+
+                                                                                                                                                                                                    }
+                                                                                                                                                                                   },
+                                                                                                                                             "slideshow__image__group__description":  {
+                                                                                                                                                                                          "type":  "$description",
+                                                                                                                                                                                          "settings":  {
+
+                                                                                                                                                                                                       }
+                                                                                                                                                                                      },
+                                                                                                                                             "slideshow__image__group__button-group":  {
+                                                                                                                                                                                           "type":  "button-group",
+                                                                                                                                                                                           "settings":  {
+
+                                                                                                                                                                                                        },
+                                                                                                                                                                                           "blocks":  {
+                                                                                                                                                                                                          "slideshow__image__group__button-group__button1":  {
+                                                                                                                                                                                                                                                                 "type":  "button",
+                                                                                                                                                                                                                                                                 "settings":  {
+                                                                                                                                                                                                                                                                                  "text":  "Shop this",
+                                                                                                                                                                                                                                                                                  "use_secondary_style":  true
+                                                                                                                                                                                                                                                                              }
+                                                                                                                                                                                                                                                             },
+                                                                                                                                                                                                          "slideshow__image__group__button-group__button2":  {
+                                                                                                                                                                                                                                                                 "type":  "button",
+                                                                                                                                                                                                                                                                 "settings":  {
+                                                                                                                                                                                                                                                                                  "text":  "Shop all",
+                                                                                                                                                                                                                                                                                  "use_secondary_style":  false
+                                                                                                                                                                                                                                                                              }
+                                                                                                                                                                                                                                                             }
+                                                                                                                                                                                                      },
+                                                                                                                                                                                           "block_order":  [
+                                                                                                                                                                                                               "slideshow__image__group__button-group__button1",
+                                                                                                                                                                                                               "slideshow__image__group__button-group__button2"
+                                                                                                                                                                                                           ]
+                                                                                                                                                                                       }
+                                                                                                                                         },
+                                                                                                                              "block_order":  [
+                                                                                                                                                  "slideshow__image__group__subtitle",
+                                                                                                                                                  "slideshow__image__group__title",
+                                                                                                                                                  "slideshow__image__group__description",
+                                                                                                                                                  "slideshow__image__group__button-group"
+                                                                                                                                              ]
+                                                                                                                          }
+                                                                                          },
+                                                                               "block_order":  [
+                                                                                                   "slideshow__image__group"
+                                                                                               ]
+                                                                           }
+                                                  },
+                                       "block_order":  [
+                                                           "slideshow__image"
+                                                       ]
+                                   },
+                     "featured-collection":  {
+                                                 "type":  "featured-collection",
+                                                 "settings":  {
+                                                                  "collection":  ""
+                                                              },
+                                                 "blocks":  {
+                                                                "featured-collection__heading-with-link":  {
+                                                                                                               "type":  "heading-with-link/heading-with-link",
+                                                                                                               "settings":  {
+                                                                                                                                "text":  "Featured collection",
+                                                                                                                                "text_size":  "title2"
+                                                                                                                            }
+                                                                                                           },
+                                                                "featured-collection__product-list":  {
+                                                                                                          "type":  "product-list/list",
+                                                                                                          "blocks":  {
+                                                                                                                         "featured-collection__product-list__card":  {
+                                                                                                                                                                         "type":  "product-list/card",
+                                                                                                                                                                         "blocks":  {
+                                                                                                                                                                                        "featured-collection__product-list__card__image":  {
+                                                                                                                                                                                                                                               "type":  "product-list/image",
+                                                                                                                                                                                                                                               "blocks":  {
+                                                                                                                                                                                                                                                              "featured-collection__product-list__card__image__layer-1":  {
+                                                                                                                                                                                                                                                                                                                              "type":  "product-list/layer",
+                                                                                                                                                                                                                                                                                                                              "settings":  {
+                                                                                                                                                                                                                                                                                                                                               "layout":  {
+                                                                                                                                                                                                                                                                                                                                                              "justify-content":  "flex-end"
+                                                                                                                                                                                                                                                                                                                                                          }
+                                                                                                                                                                                                                                                                                                                                           },
+                                                                                                                                                                                                                                                                                                                              "blocks":  {
+                                                                                                                                                                                                                                                                                                                                             "featured-collection__product-list__card__image__layer__quick-add-to-cart":  {
+                                                                                                                                                                                                                                                                                                                                                                                                                              "type":  "product-list/quick_add"
+                                                                                                                                                                                                                                                                                                                                                                                                                          }
+                                                                                                                                                                                                                                                                                                                                         },
+                                                                                                                                                                                                                                                                                                                              "block_order":  [
+                                                                                                                                                                                                                                                                                                                                                  "featured-collection__product-list__card__image__layer__quick-add-to-cart"
+                                                                                                                                                                                                                                                                                                                                              ]
+                                                                                                                                                                                                                                                                                                                          },
+                                                                                                                                                                                                                                                              "featured-collection__product-list__card__image__layer-2":  {
+                                                                                                                                                                                                                                                                                                                              "type":  "product-list/layer",
+                                                                                                                                                                                                                                                                                                                              "blocks":  {
+                                                                                                                                                                                                                                                                                                                                             "featured-collection__product-list__card__image__layer__discount-tag":  {
+                                                                                                                                                                                                                                                                                                                                                                                                                         "type":  "product-list/discount_tag"
+                                                                                                                                                                                                                                                                                                                                                                                                                     }
+                                                                                                                                                                                                                                                                                                                                         },
+                                                                                                                                                                                                                                                                                                                              "block_order":  [
+                                                                                                                                                                                                                                                                                                                                                  "featured-collection__product-list__card__image__layer__discount-tag"
+                                                                                                                                                                                                                                                                                                                                              ]
+                                                                                                                                                                                                                                                                                                                          }
+                                                                                                                                                                                                                                                          },
+                                                                                                                                                                                                                                               "block_order":  [
+                                                                                                                                                                                                                                                                   "featured-collection__product-list__card__image__layer-1",
+                                                                                                                                                                                                                                                                   "featured-collection__product-list__card__image__layer-2"
+                                                                                                                                                                                                                                                               ]
+                                                                                                                                                                                                                                           },
+                                                                                                                                                                                        "featured-collection__product-list__card__title":  {
+                                                                                                                                                                                                                                               "type":  "product-list/title"
+                                                                                                                                                                                                                                           },
+                                                                                                                                                                                        "featured-collection__product-list__card__price":  {
+                                                                                                                                                                                                                                               "type":  "product-list/price"
+                                                                                                                                                                                                                                           }
+                                                                                                                                                                                    },
+                                                                                                                                                                         "block_order":  [
+                                                                                                                                                                                             "featured-collection__product-list__card__image",
+                                                                                                                                                                                             "featured-collection__product-list__card__title",
+                                                                                                                                                                                             "featured-collection__product-list__card__price"
+                                                                                                                                                                                         ]
+                                                                                                                                                                     }
+                                                                                                                     },
+                                                                                                          "block_order":  [
+                                                                                                                              "featured-collection__product-list__card"
+                                                                                                                          ]
+                                                                                                      }
+                                                            },
+                                                 "block_order":  [
+                                                                     "featured-collection__heading-with-link",
+                                                                     "featured-collection__product-list"
+                                                                 ]
+                                             },
+                     "collection-list":  {
+                                             "type":  "collection-list",
+                                             "settings":  {
+
+                                                          },
+                                             "blocks":  {
+                                                            "collection-list__heading-with-link":  {
+                                                                                                       "type":  "heading-with-link/heading-with-link",
+                                                                                                       "settings":  {
+                                                                                                                        "text":  "Shop by category",
+                                                                                                                        "text_size":  "title2"
+                                                                                                                    }
+                                                                                                   },
+                                                            "collection-list__list":  {
+                                                                                          "type":  "$list",
+                                                                                          "blocks":  {
+                                                                                                         "collection-list__list__card-1":  {
+                                                                                                                                               "type":  "collection/card",
+                                                                                                                                               "settings":  {
+                                                                                                                                                                "collection":  ""
+                                                                                                                                                            },
+                                                                                                                                               "blocks":  {
+                                                                                                                                                              "collection-list__list__card-1__image":  {
+                                                                                                                                                                                                           "type":  "collection/image"
+                                                                                                                                                                                                       },
+                                                                                                                                                              "collection-list__list__card-1__title":  {
+                                                                                                                                                                                                           "type":  "collection/title"
+                                                                                                                                                                                                       }
+                                                                                                                                                          },
+                                                                                                                                               "block_order":  [
+                                                                                                                                                                   "collection-list__list__card-1__image",
+                                                                                                                                                                   "collection-list__list__card-1__title"
+                                                                                                                                                               ]
+                                                                                                                                           },
+                                                                                                         "collection-list__list__card-2":  {
+                                                                                                                                               "type":  "collection/card",
+                                                                                                                                               "settings":  {
+                                                                                                                                                                "collection":  ""
+                                                                                                                                                            },
+                                                                                                                                               "blocks":  {
+                                                                                                                                                              "collection-list__list__card-2__image":  {
+                                                                                                                                                                                                           "type":  "collection/image"
+                                                                                                                                                                                                       },
+                                                                                                                                                              "collection-list__list__card-2__title":  {
+                                                                                                                                                                                                           "type":  "collection/title"
+                                                                                                                                                                                                       }
+                                                                                                                                                          },
+                                                                                                                                               "block_order":  [
+                                                                                                                                                                   "collection-list__list__card-2__image",
+                                                                                                                                                                   "collection-list__list__card-2__title"
+                                                                                                                                                               ]
+                                                                                                                                           },
+                                                                                                         "collection-list__list__card-3":  {
+                                                                                                                                               "type":  "collection/card",
+                                                                                                                                               "settings":  {
+                                                                                                                                                                "collection":  ""
+                                                                                                                                                            },
+                                                                                                                                               "blocks":  {
+                                                                                                                                                              "collection-list__list__card-3__image":  {
+                                                                                                                                                                                                           "type":  "collection/image"
+                                                                                                                                                                                                       },
+                                                                                                                                                              "collection-list__list__card-3__title":  {
+                                                                                                                                                                                                           "type":  "collection/title"
+                                                                                                                                                                                                       }
+                                                                                                                                                          },
+                                                                                                                                               "block_order":  [
+                                                                                                                                                                   "collection-list__list__card-3__image",
+                                                                                                                                                                   "collection-list__list__card-3__title"
+                                                                                                                                                               ]
+                                                                                                                                           },
+                                                                                                         "collection-list__list__card-4":  {
+                                                                                                                                               "type":  "collection/card",
+                                                                                                                                               "settings":  {
+                                                                                                                                                                "collection":  ""
+                                                                                                                                                            },
+                                                                                                                                               "blocks":  {
+                                                                                                                                                              "collection-list__list__card-4__image":  {
+                                                                                                                                                                                                           "type":  "collection/image"
+                                                                                                                                                                                                       },
+                                                                                                                                                              "collection-list__list__card-4__title":  {
+                                                                                                                                                                                                           "type":  "collection/title"
+                                                                                                                                                                                                       }
+                                                                                                                                                          },
+                                                                                                                                               "block_order":  [
+                                                                                                                                                                   "collection-list__list__card-4__image",
+                                                                                                                                                                   "collection-list__list__card-4__title"
+                                                                                                                                                               ]
+                                                                                                                                           }
+                                                                                                     },
+                                                                                          "block_order":  [
+                                                                                                              "collection-list__list__card-1",
+                                                                                                              "collection-list__list__card-2",
+                                                                                                              "collection-list__list__card-3",
+                                                                                                              "collection-list__list__card-4"
+                                                                                                          ]
+                                                                                      }
+                                                        },
+                                             "block_order":  [
+                                                                 "collection-list__heading-with-link",
+                                                                 "collection-list__list"
+                                                             ]
+                                         },
+                     "blog":  {
+                                  "type":  "blog",
+                                  "settings":  {
+                                                   "blog":  ""
+                                               },
+                                  "blocks":  {
+                                                 "blog__title":  {
+                                                                     "type":  "heading-with-link/heading-with-link",
+                                                                     "settings":  {
+                                                                                      "text":  "Blogs",
+                                                                                      "text_size":  "title4"
+                                                                                  }
+                                                                 },
+                                                 "blog__articles":  {
+                                                                        "type":  "$articles",
+                                                                        "blocks":  {
+                                                                                       "blog__articles__article_card":  {
+                                                                                                                            "type":  "article/card",
+                                                                                                                            "settings":  {
+
+                                                                                                                                         },
+                                                                                                                            "blocks":  {
+                                                                                                                                           "blog__articles__article_card__cover":  {
+                                                                                                                                                                                       "type":  "article/cover"
+                                                                                                                                                                                   },
+                                                                                                                                           "blog__articles__article_card__info":  {
+                                                                                                                                                                                      "type":  "article/info",
+                                                                                                                                                                                      "blocks":  {
+                                                                                                                                                                                                     "blog__articles__article_card__title":  {
+                                                                                                                                                                                                                                                 "type":  "article/title"
+                                                                                                                                                                                                                                             },
+                                                                                                                                                                                                     "blog__articles__article_card__date_author":  {
+                                                                                                                                                                                                                                                       "type":  "article/date_author"
+                                                                                                                                                                                                                                                   },
+                                                                                                                                                                                                     "blog__articles__article_card__excerpt":  {
+                                                                                                                                                                                                                                                   "type":  "article/excerpt"
+                                                                                                                                                                                                                                               }
+                                                                                                                                                                                                 },
+                                                                                                                                                                                      "block_order":  [
+                                                                                                                                                                                                          "blog__articles__article_card__title",
+                                                                                                                                                                                                          "blog__articles__article_card__date_author",
+                                                                                                                                                                                                          "blog__articles__article_card__excerpt"
+                                                                                                                                                                                                      ]
+                                                                                                                                                                                  }
+                                                                                                                                       },
+                                                                                                                            "block_order":  [
+                                                                                                                                                "blog__articles__article_card__cover",
+                                                                                                                                                "blog__articles__article_card__info"
+                                                                                                                                            ]
+                                                                                                                        }
+                                                                                   },
+                                                                        "block_order":  [
+                                                                                            "blog__articles__article_card"
+                                                                                        ]
+                                                                    }
+                                             },
+                                  "block_order":  [
+                                                      "blog__title",
+                                                      "blog__articles"
+                                                  ]
+                              },
+                     "rich-text":  {
+                                       "disabled":  false,
+                                       "type":  "rich-text",
+                                       "settings":  {
+
+                                                    },
+                                       "blocks":  {
+                                                      "rich-text__heading":  {
+                                                                                 "type":  "heading",
+                                                                                 "settings":  {
+                                                                                                  "text":  "Rich text",
+                                                                                                  "text_align":  "center",
+                                                                                                  "text_size":  "title1"
+                                                                                              }
+                                                                             },
+                                                      "rich-text":  {
+                                                                        "type":  "rich-text",
+                                                                        "settings":  {
+
+                                                                                     }
+                                                                    },
+                                                      "rich-text__button-group":  {
+                                                                                      "type":  "button-group",
+                                                                                      "settings":  {
+
+                                                                                                   },
+                                                                                      "blocks":  {
+                                                                                                     "rich-text__button-group__button1":  {
+                                                                                                                                              "type":  "button",
+                                                                                                                                              "settings":  {
+                                                                                                                                                               "use_secondary_style":  false,
+                                                                                                                                                               "text":  "Shop this"
+                                                                                                                                                           }
+                                                                                                                                          },
+                                                                                                     "rich-text__button-group__button2":  {
+                                                                                                                                              "type":  "button",
+                                                                                                                                              "settings":  {
+                                                                                                                                                               "use_secondary_style":  true,
+                                                                                                                                                               "text":  "Shop all"
+                                                                                                                                                           }
+                                                                                                                                          }
+                                                                                                 },
+                                                                                      "block_order":  [
+                                                                                                          "rich-text__button-group__button1",
+                                                                                                          "rich-text__button-group__button2"
+                                                                                                      ]
+                                                                                  }
+                                                  },
+                                       "block_order":  [
+                                                           "rich-text__heading",
+                                                           "rich-text",
+                                                           "rich-text__button-group"
+                                                       ]
+                                   },
+                     "video":  {
+                                   "disabled":  false,
+                                   "type":  "video",
+                                   "settings":  {
+
+                                                },
+                                   "blocks":  {
+                                                  "video__heading":  {
+                                                                         "type":  "heading",
+                                                                         "settings":  {
+                                                                                          "text":  "Video",
+                                                                                          "text_size":  "title2"
+                                                                                      }
+                                                                     },
+                                                  "video__video":  {
+                                                                       "type":  "$video",
+                                                                       "settings":  {
+
+                                                                                    }
+                                                                   },
+                                                  "video__description":  {
+                                                                             "type":  "description",
+                                                                             "settings":  {
+                                                                                              "content":  "A short description of the video."
+                                                                                          }
+                                                                         }
+                                              },
+                                   "block_order":  [
+                                                       "video__heading",
+                                                       "video__video",
+                                                       "video__description"
+                                                   ],
+                                   "custom_css":  [
+
+                                                  ]
+                               },
+                     "image-banner":  {
+                                          "type":  "image-banner",
+                                          "settings":  {
+
+                                                       },
+                                          "blocks":  {
+                                                         "container":  {
+                                                                           "type":  "$container",
+                                                                           "blocks":  {
+                                                                                          "image-banner__subheading":  {
+                                                                                                                           "type":  "$subheading"
+                                                                                                                       },
+                                                                                          "image-banner__heading":  {
+                                                                                                                        "type":  "$heading"
+                                                                                                                    },
+                                                                                          "image-banner__description":  {
+                                                                                                                            "type":  "$description"
+                                                                                                                        },
+                                                                                          "image-banner__button":  {
+                                                                                                                       "type":  "$button"
+                                                                                                                   }
+                                                                                      },
+                                                                           "block_order":  [
+                                                                                               "image-banner__subheading",
+                                                                                               "image-banner__heading",
+                                                                                               "image-banner__description",
+                                                                                               "image-banner__button"
+                                                                                           ]
+                                                                       }
+                                                     },
+                                          "block_order":  [
+                                                              "container"
+                                                          ]
+                                      },
+                     "sign-up-and-save":  {
+                                              "type":  "sign-up-and-save",
+                                              "settings":  {
+
+                                                           },
+                                              "blocks":  {
+                                                             "block-1":  {
+                                                                             "type":  "heading",
+                                                                             "settings":  {
+                                                                                              "text":  "Sign up and save"
+                                                                                          }
+                                                                         },
+                                                             "block-2":  {
+                                                                             "type":  "rich-text",
+                                                                             "settings":  {
+                                                                                              "content":  "Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals."
+                                                                                          }
+                                                                         },
+                                                             "block-3":  {
+                                                                             "type":  "$subscription"
+                                                                         }
+                                                         },
+                                              "block_order":  [
+                                                                  "block-1",
+                                                                  "block-2",
+                                                                  "block-3"
+                                                              ]
+                                          },
+                     "roverseat-home":  {
+                                            "type":  "roverseat-home",
+                                            "settings":  {
+
+                                                         }
+                                        }
+                 },
+    "order":  [
+                  "roverseat-home"
               ]
-            },
-            "text-columns-with-image__card2": {
-              "type": "$card",
-              "settings": {},
-              "blocks": {
-                "text-columns-with-image__card2__image": {
-                  "type": "$image"
-                },
-                "text-columns-with-image__card2__title": {
-                  "type": "$title"
-                },
-                "text-columns-with-image__card2__text": {
-                  "type": "$text"
-                }
-              },
-              "block_order": [
-                "text-columns-with-image__card2__image",
-                "text-columns-with-image__card2__title",
-                "text-columns-with-image__card2__text"
-              ]
-            },
-            "text-columns-with-image__card3": {
-              "type": "$card",
-              "settings": {},
-              "blocks": {
-                "text-columns-with-image__card3__image": {
-                  "type": "$image"
-                },
-                "text-columns-with-image__card3__title": {
-                  "type": "$title"
-                },
-                "text-columns-with-image__card3__text": {
-                  "type": "$text"
-                }
-              },
-              "block_order": [
-                "text-columns-with-image__card3__image",
-                "text-columns-with-image__card3__title",
-                "text-columns-with-image__card3__text"
-              ]
-            }
-          },
-          "block_order": [
-            "text-columns-with-image__card",
-            "text-columns-with-image__card2",
-            "text-columns-with-image__card3"
-          ]
-        }
-      },
-      "block_order": ["text-columns-with-image__heading", "text-columns-with-image__card-group"]
-    },
-    "image-with-text": {
-      "type": "image-with-text",
-      "settings": {},
-      "blocks": {
-        "image-with-text__image": {
-          "type": "$image"
-        },
-        "image-with-text__group": {
-          "type": "$group",
-          "settings": {},
-          "blocks": {
-            "image-with-text__group__heading": {
-              "type": "$heading"
-            },
-            "image-with-text__group__subheading": {
-              "type": "$subheading"
-            },
-            "image-with-text__group__rich-text": {
-              "type": "$rich-text"
-            },
-            "image-with-text__group__button": {
-              "type": "$button"
-            }
-          },
-          "block_order": [
-            "image-with-text__group__subheading",
-            "image-with-text__group__heading",
-            "image-with-text__group__rich-text",
-            "image-with-text__group__button"
-          ]
-        }
-      },
-      "block_order": ["image-with-text__image", "image-with-text__group"]
-    },
-    "slideshow": {
-      "type": "slideshow",
-      "settings": {},
-      "blocks": {
-        "slideshow__image": {
-          "type": "$image",
-          "settings": {},
-          "blocks": {
-            "slideshow__image__group": {
-              "type": "$group",
-              "settings": {},
-              "blocks": {
-                "slideshow__image__group__title": {
-                  "type": "$title",
-                  "settings": {}
-                },
-                "slideshow__image__group__subtitle": {
-                  "type": "$subtitle",
-                  "settings": {}
-                },
-                "slideshow__image__group__description": {
-                  "type": "$description",
-                  "settings": {}
-                },
-                "slideshow__image__group__button-group": {
-                  "type": "button-group",
-                  "settings": {},
-                  "blocks": {
-                    "slideshow__image__group__button-group__button1": {
-                      "type": "button",
-                      "settings": {
-                        "text": "Shop this",
-                        "use_secondary_style": true
-                      }
-                    },
-                    "slideshow__image__group__button-group__button2": {
-                      "type": "button",
-                      "settings": {
-                        "text": "Shop all",
-                        "use_secondary_style": false
-                      }
-                    }
-                  },
-                  "block_order": [
-                    "slideshow__image__group__button-group__button1",
-                    "slideshow__image__group__button-group__button2"
-                  ]
-                }
-              },
-              "block_order": [
-                "slideshow__image__group__subtitle",
-                "slideshow__image__group__title",
-                "slideshow__image__group__description",
-                "slideshow__image__group__button-group"
-              ]
-            }
-          },
-          "block_order": ["slideshow__image__group"]
-        }
-      },
-      "block_order": ["slideshow__image"]
-    },
-    "featured-collection": {
-      "type": "featured-collection",
-      "settings": {
-        "collection": ""
-      },
-      "blocks": {
-        "featured-collection__heading-with-link": {
-          "type": "heading-with-link/heading-with-link",
-          "settings": {
-            "text": "Featured collection",
-            "text_size": "title2"
-          }
-        },
-        "featured-collection__product-list": {
-          "type": "product-list/list",
-          "blocks": {
-            "featured-collection__product-list__card": {
-              "type": "product-list/card",
-              "blocks": {
-                "featured-collection__product-list__card__image": {
-                  "type": "product-list/image",
-                  "blocks": {
-                    "featured-collection__product-list__card__image__layer-1": {
-                      "type": "product-list/layer",
-                      "settings": {
-                        "layout": {
-                          "justify-content": "flex-end"
-                        }
-                      },
-                      "blocks": {
-                        "featured-collection__product-list__card__image__layer__quick-add-to-cart": {
-                          "type": "product-list/quick_add"
-                        }
-                      },
-                      "block_order": ["featured-collection__product-list__card__image__layer__quick-add-to-cart"]
-                    },
-                    "featured-collection__product-list__card__image__layer-2": {
-                      "type": "product-list/layer",
-                      "blocks": {
-                        "featured-collection__product-list__card__image__layer__discount-tag": {
-                          "type": "product-list/discount_tag"
-                        }
-                      },
-                      "block_order": ["featured-collection__product-list__card__image__layer__discount-tag"]
-                    }
-                  },
-                  "block_order": [
-                    "featured-collection__product-list__card__image__layer-1",
-                    "featured-collection__product-list__card__image__layer-2"
-                  ]
-                },
-                "featured-collection__product-list__card__title": {
-                  "type": "product-list/title"
-                },
-                "featured-collection__product-list__card__price": {
-                  "type": "product-list/price"
-                }
-              },
-              "block_order": [
-                "featured-collection__product-list__card__image",
-                "featured-collection__product-list__card__title",
-                "featured-collection__product-list__card__price"
-              ]
-            }
-          },
-          "block_order": ["featured-collection__product-list__card"]
-        }
-      },
-      "block_order": ["featured-collection__heading-with-link", "featured-collection__product-list"]
-    },
-    "collection-list": {
-      "type": "collection-list",
-      "settings": {},
-      "blocks": {
-        "collection-list__heading-with-link": {
-          "type": "heading-with-link/heading-with-link",
-          "settings": {
-            "text": "Shop by category",
-            "text_size": "title2"
-          }
-        },
-        "collection-list__list": {
-          "type": "$list",
-          "blocks": {
-            "collection-list__list__card-1": {
-              "type": "collection/card",
-              "settings": {
-                "collection": ""
-              },
-              "blocks": {
-                "collection-list__list__card-1__image": {
-                  "type": "collection/image"
-                },
-                "collection-list__list__card-1__title": {
-                  "type": "collection/title"
-                }
-              },
-              "block_order": ["collection-list__list__card-1__image", "collection-list__list__card-1__title"]
-            },
-            "collection-list__list__card-2": {
-              "type": "collection/card",
-              "settings": {
-                "collection": ""
-              },
-              "blocks": {
-                "collection-list__list__card-2__image": {
-                  "type": "collection/image"
-                },
-                "collection-list__list__card-2__title": {
-                  "type": "collection/title"
-                }
-              },
-              "block_order": ["collection-list__list__card-2__image", "collection-list__list__card-2__title"]
-            },
-            "collection-list__list__card-3": {
-              "type": "collection/card",
-              "settings": {
-                "collection": ""
-              },
-              "blocks": {
-                "collection-list__list__card-3__image": {
-                  "type": "collection/image"
-                },
-                "collection-list__list__card-3__title": {
-                  "type": "collection/title"
-                }
-              },
-              "block_order": ["collection-list__list__card-3__image", "collection-list__list__card-3__title"]
-            },
-            "collection-list__list__card-4": {
-              "type": "collection/card",
-              "settings": {
-                "collection": ""
-              },
-              "blocks": {
-                "collection-list__list__card-4__image": {
-                  "type": "collection/image"
-                },
-                "collection-list__list__card-4__title": {
-                  "type": "collection/title"
-                }
-              },
-              "block_order": ["collection-list__list__card-4__image", "collection-list__list__card-4__title"]
-            }
-          },
-          "block_order": [
-            "collection-list__list__card-1",
-            "collection-list__list__card-2",
-            "collection-list__list__card-3",
-            "collection-list__list__card-4"
-          ]
-        }
-      },
-      "block_order": ["collection-list__heading-with-link", "collection-list__list"]
-    },
-    "blog": {
-      "type": "blog",
-      "settings": {
-        "blog": ""
-      },
-      "blocks": {
-        "blog__title": {
-          "type": "heading-with-link/heading-with-link",
-          "settings": {
-            "text": "Blogs",
-            "text_size": "title4"
-          }
-        },
-        "blog__articles": {
-          "type": "$articles",
-          "blocks": {
-            "blog__articles__article_card": {
-              "type": "article/card",
-              "settings": {},
-              "blocks": {
-                "blog__articles__article_card__cover": {
-                  "type": "article/cover"
-                },
-                "blog__articles__article_card__info": {
-                  "type": "article/info",
-                  "blocks": {
-                    "blog__articles__article_card__title": {
-                      "type": "article/title"
-                    },
-                    "blog__articles__article_card__date_author": {
-                      "type": "article/date_author"
-                    },
-                    "blog__articles__article_card__excerpt": {
-                      "type": "article/excerpt"
-                    }
-                  },
-                  "block_order": [
-                    "blog__articles__article_card__title",
-                    "blog__articles__article_card__date_author",
-                    "blog__articles__article_card__excerpt"
-                  ]
-                }
-              },
-              "block_order": ["blog__articles__article_card__cover", "blog__articles__article_card__info"]
-            }
-          },
-          "block_order": ["blog__articles__article_card"]
-        }
-      },
-      "block_order": ["blog__title", "blog__articles"]
-    },
-    "rich-text": {
-      "disabled": false,
-      "type": "rich-text",
-      "settings": {},
-      "blocks": {
-        "rich-text__heading": {
-          "type": "heading",
-          "settings": {
-            "text": "Rich text",
-            "text_align": "center",
-            "text_size": "title1"
-          }
-        },
-        "rich-text": {
-          "type": "rich-text",
-          "settings": {}
-        },
-        "rich-text__button-group": {
-          "type": "button-group",
-          "settings": {},
-          "blocks": {
-            "rich-text__button-group__button1": {
-              "type": "button",
-              "settings": {
-                "use_secondary_style": false,
-                "text": "Shop this"
-              }
-            },
-            "rich-text__button-group__button2": {
-              "type": "button",
-              "settings": {
-                "use_secondary_style": true,
-                "text": "Shop all"
-              }
-            }
-          },
-          "block_order": ["rich-text__button-group__button1", "rich-text__button-group__button2"]
-        }
-      },
-      "block_order": ["rich-text__heading", "rich-text", "rich-text__button-group"]
-    },
-    "video": {
-      "disabled": false,
-      "type": "video",
-      "settings": {},
-      "blocks": {
-        "video__heading": {
-          "type": "heading",
-          "settings": {
-            "text": "Video",
-            "text_size": "title2"
-          }
-        },
-        "video__video": {
-          "type": "$video",
-          "settings": {}
-        },
-        "video__description": {
-          "type": "description",
-          "settings": {
-            "content": "A short description of the video."
-          }
-        }
-      },
-      "block_order": ["video__heading", "video__video", "video__description"],
-      "custom_css": []
-    },
-    "image-banner": {
-      "type": "image-banner",
-      "settings": {},
-      "blocks": {
-        "container": {
-          "type": "$container",
-          "blocks": {
-            "image-banner__subheading": {
-              "type": "$subheading"
-            },
-            "image-banner__heading": {
-              "type": "$heading"
-            },
-            "image-banner__description": {
-              "type": "$description"
-            },
-            "image-banner__button": {
-              "type": "$button"
-            }
-          },
-          "block_order": [
-            "image-banner__subheading",
-            "image-banner__heading",
-            "image-banner__description",
-            "image-banner__button"
-          ]
-        }
-      },
-      "block_order": ["container"]
-    },
-    "sign-up-and-save": {
-      "type": "sign-up-and-save",
-      "settings": {},
-      "blocks": {
-        "block-1": {
-          "type": "heading",
-          "settings": {
-            "text": "Sign up and save"
-          }
-        },
-        "block-2": {
-          "type": "rich-text",
-          "settings": {
-            "content": "Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals."
-          }
-        },
-        "block-3": {
-          "type": "$subscription"
-        }
-      },
-      "block_order": ["block-1", "block-2", "block-3"]
-    }
-  },
-  "order": [
-    "bottle-landing",
-    "slideshow",
-    "rich-text",
-    "collection-list",
-    "image-banner",
-    "featured-collection",
-    "blog",
-    "video",
-    "image-with-text",
-    "text-columns-with-image",
-    "sign-up-and-save"
-  ]
 }
